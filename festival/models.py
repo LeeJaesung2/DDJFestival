@@ -31,16 +31,17 @@ class Food(models.Model):
 class Menu(models.Model):
     name = models.ForeignKey(Food, on_delete=models.CASCADE)
     food_name = models.CharField(max_length=200)
-    emoticon = models.ImageField()
+    emoticon = models.ImageField(blank=True, upload_to='static/image/menu')
+    price = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.name
+        return self.food_name
 
 class Notice(models.Model):
     pub_date = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=200)
     content = models.TextField()
-    image = models.ImageField(blank=True, upload_to='static/image/gongzi')
+    image = models.ImageField(blank=True, upload_to='static/image/notice')
 
     def __str__(self):
         return self.title
