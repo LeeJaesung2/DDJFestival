@@ -11,6 +11,14 @@ class Booth(models.Model):
     def __str__(self):
         return self.name
 
+class BoothEvent(models.Model):
+    booth = models.ForeignKey(Booth, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    
+    def __str__(self):
+        return self.title
+
 class Food(models.Model):
     name = models.CharField(max_length=200)
     time = models.CharField(max_length=200)
