@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Booth, BoothEvent, Food, Menu, Notice
 
 # Create your views here.
+
 def getBooths(request):
     booths = Booth.objects.all()
     return render(request, 'booth.html', {'booths' : booths})

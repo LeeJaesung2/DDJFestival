@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!--font aws-->
+    <link rel="stylesheet" href="{% static 'css/food.css' %}" />
+
+    <script src="./food.js" defer></script>
+    <title>푸드트럭</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <span class="festival-sub-font-style"> 2022 FESTIVAL </span>
+        <span class="food-font-style">FOOD TRUCK</span>
+      </div>
+
+      <section class="location-container">
+        <div class="section-title-container">
+          <div class="section-title">🗺 location</div>
+          <div class="section-sub-title">
+            가게 위치를 한번에! 맛집들이 한눈에!
+          </div>
+        </div>
+        <img
+          class="location-map-image"
+          src="{% static 'image/지도.png' %}"
+          alt=""
+        />
+      </section>
+
+      <section class="truck-container">
+        <div class="section-title-container">
+          <div class="section-title">🚛 Truck</div>
+          <div class="section-sub-title">
+            축제하면 먹거리! 오늘 먹을 야식을 골라보세요!
+          </div>
+        </div>
+
+        <!-- 여기서 부터 -->
+        <div class="truck-box" id="1" onclick="onClickEvent(this.id);">
+          <div class="food-truck-before">
+            <div class="food-truck-name-time-container" id="1">
+              <span class="food-truck-name">푸드트럭</span>
+              <span class="food-truck-time">운영 시간 10:00 ~ 17:00</span>
+            </div>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+
+          <!-- 클릭 했을 때 나오는 상세 부분-->
+          <div class="truck-box-detail">
+            <img
+              class="food-truck-image"
+              src="{% static 'image/food_truck.png' %}"
+            />
+
+            <div class="food-truck-menus-container">
+              <h3>대표메뉴</h3>
+              <div class="food-truck-menu">🍕 포테이토 피자 12000원</div>
+              <div class="food-truck-menu">🍔 민트초코 햄버거 1100원</div>
+            </div>
+          </div>
+        </div>
+        <!-- 여기까지-->
+
+        <!-- 여기서 부터 -->
+        <div class="truck-box" id="2" onclick="onClickEvent(this.id);">
+          <div class="food-truck-before">
+            <div class="food-truck-name-time-container">
+              <span class="food-truck-name">푸드트럭</span>
+              <span class="food-truck-time">운영 시간 10:00 ~ 17:00</span>
+            </div>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+
+          <!-- 클릭 했을 때 나오는 상세 부분-->
+          <div class="truck-box-detail">
+            <img
+              class="food-truck-image"
+              src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201805/01/321d1bd8-542b-44d6-99ee-ebcb331c177f.jpg"
+            />
+
+            <div class="food-truck-menus-container">
+              <h3>대표메뉴</h3>
+              <div class="food-truck-menu">🍕 포테이토 피자 12000원</div>
+              <div class="food-truck-menu">🍔 민트초코 햄버거 1100원</div>
+            </div>
+          </div>
+        </div>
+        <!-- 여기까지-->
+
+        <!-- 여기서 부터 -->
+        <div class="truck-box" id="3" onclick="onClickEvent(this.id);">
+          <div class="food-truck-before">
+            <div class="food-truck-name-time-container">
+              <span class="food-truck-name">푸드트럭</span>
+              <span class="food-truck-time">운영 시간 10:00 ~ 17:00</span>
+            </div>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+
+          <!-- 클릭 했을 때 나오는 상세 부분-->
+          <div class="truck-box-detail">
+            <img
+              class="food-truck-image"
+              src="https://www.smlounge.co.kr/upload/living/article/201511/thumb/20353-27912-sampleM.jpg"
+            />
+
+            <div class="food-truck-menus-container">
+              <h3>대표메뉴</h3>
+              <div class="food-truck-menu">🍕 포테이토zz 피자 12000원</div>
+              <div class="food-truck-menu">🍔 민트초코zz 햄버거 1100원</div>
+            </div>
+          </div>
+        </div>
+        <!-- 여기까지-->
+      </section>
+    </div>
+  </body>
+</html>
