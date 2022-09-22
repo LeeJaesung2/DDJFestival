@@ -10,6 +10,9 @@ def getBooths(request):
     booths = Booth.objects.all()
     return render(request, 'booth.html', {'booths' : booths})
 
+def getBooths2(request):
+    return render(request, 'booth2.html')
+
 def getBoothById(request, booth_id):
     booth = Booth.objects.get(pk = booth_id)
     return render(request, 'booth.html', {'booth' : booth})
