@@ -15,8 +15,8 @@ def getBoothById(request, booth_id):
     return render(request, 'booth.html', {'booth' : booth})
 
 def getBoothEvents(request, booth_id):
-    boothEvent = BoothEvent.objects.filter(booth = booth_id)
-    return render(request, 'booth.html', {'boothEvent' : boothEvent})
+    boothEvents = BoothEvent.objects.filter(booth = booth_id)
+    return render(request, 'booth.html', {'boothEvents' : boothEvents})
 
 def getFoods(request):
     foods = Food.objects.all()
