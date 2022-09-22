@@ -3,6 +3,9 @@ from .models import Booth, BoothEvent, Food, Menu, Notice
 
 # Create your views here.
 
+def home(request):
+    return render(request,'main.html')
+
 def getBooths(request):
     booths = Booth.objects.all()
     return render(request, 'booth.html', {'booths' : booths})
