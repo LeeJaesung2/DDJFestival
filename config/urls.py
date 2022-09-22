@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from festival import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('food/', views.food_booth, name='food')
 ]
