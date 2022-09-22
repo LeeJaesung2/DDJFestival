@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'festival.apps.FestivalConfig'
+    'festival.apps.FestivalConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
