@@ -1,0 +1,77 @@
+body {
+  background-color: #0d0d0d;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7.125rem;
+  align-items: center;
+}
+
+.title {
+  width: 117px;
+  height: 19px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #fbc22e;
+}
+
+.booth {
+  width: 127px;
+  height: 43px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 43px;
+  color: #ffffff;
+}
+
+.see-btn {
+  width: 100%;
+  display: flex;
+  margin-top: 37px;
+  justify-content: center;
+}
+
+.total {
+  width: 100px;
+  height: 30px;
+  padding-bottom: 8px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  background-color: #0d0d0d;
+  border-bottom: 2px solid #ffffff;
+}
+
+.total:hover {
+  cursor: pointer;
+}
+
+.part {
+  width: 100px;
+  height: 30px;
+  padding-bottom: 8px;
+  margin-left: 20px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #9b9b9b;
+  border: none;
+  background-color: #0d0d0d;
+}
+
+.part:hover {
+  cursor: pointer;
+}
