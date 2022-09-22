@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    margin: 24px 48px 24px 48px;
+}
+
+.footer {
+    text-decoration: none;
+    color: white;
+    font-family: 'Pretendard';
+    font-weight: bold;
+}
+
+.insta {
+    display: flex;
+    list-style: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.insta li {
+    padding-right: 5px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    list-style: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.name li {
+    list-style: none;
+    padding: 2px;
+}
+
+.contact {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.made {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.end {
+    margin: 0;
+    margin-top: 24px;
+    text-align: center;
+    color: #FBC22E;
+    font-size: 14px;
+}
