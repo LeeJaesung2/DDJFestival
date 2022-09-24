@@ -20,7 +20,7 @@
     </div>
 
     <div class="see-btn">
-      <button class="total">한눈에 보기</button>
+      <button class="total" onclick="location.href='{% url 'Booths' %}'">한눈에 보기</button>
       <button class="part">부스별 보기</button>
     </div>
 
@@ -51,9 +51,7 @@
           <div class="booth-detail-event-container">
             <div class="event">진행 이벤트</div>
             <ul class="booth-event">
-              {% for boothEvent in boothEvents %}
-              <li>{{boothEvent.title}}</li>
-              {% endfor %}
+              <li>oo</li>
             </ul>
           </div>
 
