@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <script src="./booth2.js" defer></script>
+    <script src=/static/js/booth2.js defer></script>
   </head>
   <body>
     <div class="container">
@@ -20,14 +20,14 @@
     </div>
 
     <div class="see-btn">
-      <button class="total" onclick="location.href='{% url 'Booths' %}'">한눈에 보기</button>
+      <button class="total" onclick="location.href='{% url 'booth' %}'">한눈에 보기</button>
       <button class="part">부스별 보기</button>
     </div>
 
     <section class="booth-container">
       <!-- 펼치기 전  -->
       {% for booth in booths %}
-      <div class="booth-box" id="1" onclick="onClickEvent(this.id);">
+      <div class="booth-box" id="{{booth.id}}" onclick="onClickEvent(this.id);">
         <div class="booth-before">
           <div class="title-wrap">
             <div class="booth-name">{{booth.name}}</div>
