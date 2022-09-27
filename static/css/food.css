@@ -1,0 +1,154 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+:root {
+  --default-font: #ffffff;
+  --highlight-font: #fbc22e;
+  --foodtruck-list-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background-color: #0d0d0d;
+  height: 100%;
+}
+
+.title-container {
+  width: 100%;
+  margin-top: 7.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.festival-sub-font-style {
+  width: 117px;
+  height: 19px;
+  font-family: "Pretendard";
+  font-size: 1rem;
+  color: var(--highlight-font);
+  font-weight: 700;
+}
+
+.food-font-style {
+  width: 232px;
+  height: 43px;
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: var(--default-font);
+  line-height: 43px;
+}
+
+.location-container {
+  margin: 2.3125rem 2rem 2.688rem 2rem;
+}
+
+.section-title-container {
+  margin-bottom: 23px;
+}
+
+.section-title {
+  font-family: "Pretendard";
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--default-font);
+  margin-bottom: 7px;
+}
+
+.section-sub-title {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #797979;
+}
+
+.location-map-image {
+  width: 100%;
+  height: 10rem;
+  border-radius: 15px;
+}
+
+.truck-container {
+  margin: 0 2rem 0 2rem;
+}
+
+/* 디폴트로 보이는 화면, 화살표 안눌렀을때 */
+.truck-box {
+  background-color: rgba(255, 255, 255, 0.2);
+
+  padding: 1.3rem 1.5rem 1.3rem 1.5rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.food-truck-name-time-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-truck-before {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 1.875rem;
+  color: var(--default-font);
+}
+
+.icon-up {
+  transform: rotate(180deg);
+  transition: transform 0.5s linear;
+}
+
+.icon-down {
+  transition: transform 0.5s linear;
+}
+
+.food-truck-name {
+  font-family: "Pretendard";
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--default-font);
+}
+
+.food-truck-time {
+  font-family: "Pretendard";
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(225, 225, 225, 0.8);
+}
+
+.truck-box-detail {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.food-truck-image {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  height: 10.438rem;
+  border-radius: 15px;
+}
+
+.food-truck-menus-container h3 {
+  font-family: "Pretendard";
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--default-font);
+  margin-bottom: 8px;
+}
+
+.food-truck-menus-container .food-truck-menu {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #e1e1e1;
+  margin-bottom: 8px;
+}

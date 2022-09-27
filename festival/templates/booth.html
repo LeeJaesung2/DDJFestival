@@ -1,0 +1,56 @@
+{% extends 'footer.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booth</title>
+   <link rel="stylesheet" href="{% static 'css/booth.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/d35df90ac6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="././static/js/booth.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="title">2022 FESTIVAL</div>
+      <div class="booth">BOOTH</div>
+    </section>
+
+    <section class="see-btn">
+      <button class="total">한눈에 보기</button>
+      <button class="part" onclick="location.href='{% url 'booth2' %}'">부스별 보기</button>
+    </section>
+
+    <section class="map-wrap">
+      <img class="map-img" src="{% static 'image/동아리 부스 지도.png' %}" alt="map">
+      <div class="location-wrap" id="location1">
+        <button class="location-btn"><i class="fa-solid fa-location-dot" data-name="보라소니" data-info="보라소니 어쩌구 저쩌구" data-event="보라소니이벤트1 보라소니이벤트2 보라소니이벤트3"></i></button>
+        <p class="location-name">보라소니</p>
+      </div>
+      <div class="location-wrap" id="location2">
+        <button class="location-btn"><i class="fa-solid fa-location-dot" data-name="그린저니" data-info="그린저니 어쩌구 저쩌구" data-event="그린저니이벤트1 그린저니이벤트2 그린저니이벤트3"></i></button>
+        <p class="location-name">그린저니</p>
+      </div>
+      <div class="location-wrap" id="location3">
+        <button class="location-btn">
+          <i class="fa-solid fa-location-dot" data-name="생협 학생위원회" data-info="생협 어쩌구 저쩌구" data-event="생협이벤트1 생협이벤트2 생협이벤트3"></i>
+        </button>
+        <p class="location-name">생협 학생위원회</p>
+      </div>
+      <div class="booth-popup">
+        <button class="x-btn"><i class="fa-sharp fa-solid fa-x"></i></button>
+        <p class="booth-name">동아리 이름</p>
+        <p class="booth-info">동아리 소개</p>
+        <ul class="event-list">
+        </ul>
+      </div>
+      
+    </section>
+  </body>
+</html>
+{% endblock %}
