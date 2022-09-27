@@ -23,11 +23,11 @@
 
     <section class="see-btn">
       <button class="total">한눈에 보기</button>
-      <button class="part">부스별 보기</button>
+      <button class="part" onclick="location.href='{% url 'booth2' %}'">부스별 보기</button>
     </section>
 
     <section class="map-wrap">
-      <img class="map-img" src="././static/image/동아리 부스 지도.png" alt="map">
+      <img class="map-img" src="{% static 'image/동아리 부스 지도.png' %}" alt="map">
       <div class="location-wrap" id="location1">
         <button class="location-btn"><i class="fa-solid fa-location-dot" data-name="보라소니" data-info="보라소니 어쩌구 저쩌구" data-event="보라소니이벤트1 보라소니이벤트2 보라소니이벤트3"></i></button>
         <p class="location-name">보라소니</p>
@@ -49,7 +49,7 @@
         <ul class="event-list">
         </ul>
       </div>
-      <button class="part" onclick="location.href='{% url 'booth2' %}'">부스별 보기</button>
+      
     </section>
   </body>
 </html>
