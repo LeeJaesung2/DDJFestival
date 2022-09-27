@@ -24,6 +24,7 @@ h1{
 #wrapper{
     background-color: #0d0d0d;
     text-align: center;
+    width: auto;
 }
 
 .navicon {
@@ -46,7 +47,7 @@ h1{
 
 .topicon {
     position: fixed;
-    top: 640px; left: 345px;
+    top: 640px; right: 30px;
     display: flex;
     text-align: center;
     width: 40px;
@@ -66,8 +67,11 @@ h1{
 
 /* MAIN */
 #main {
-    margin:0;
+    margin:0 auto;
+    margin-bottom: 4.5rem;
     background-image: url(/static/image/main/background1.jpg);
+    align-items: center;
+    text-align: center;
 }
 
 .mainsection {
@@ -99,19 +103,22 @@ h1{
 }
 
 .downicon {
-    margin-top: 75px;
+    margin-top: 4.5rem;
+    text-align: center;
 }
 
 /* LINEUP */
 #lineup {
-    margin:0;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
 }
 
 .lineupsection {
     max-width: 294px;
-    height: 744px;
     padding: 50px 48px;
 }
+
 .ftv {
     font-size: 16px;
     font-weight: 700;
@@ -171,7 +178,7 @@ h1{
     border: none;
     color: white;
     border-radius: 15px;
-    width: 294px;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -183,27 +190,30 @@ h1{
 
 /* BOOTH */
 #booth {
-    margin:0;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
 }
 
 .boothsection {
     max-width: 294px;
-    height: 744px;
     padding: 50px 48px;
 }
 
 .booth1 {
     margin-top: 50px;
+    width: 100%;
 }
 
 /* FOOD */
 #food {
-    margin: 0;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
 }
 
 .foodsection{
     max-width: 294px;
-    height: 644px;
     padding: 50px 48px;
 }
 
@@ -216,7 +226,7 @@ h1{
 
 /* 이미지 슬라이드 */
 .swiper {
-    width: 294px;
+    width: 100%;
     height: 390px;
     margin-bottom: 10px;
 }
@@ -227,7 +237,7 @@ h1{
 }
 
 .swiper-slide img {
-    width: 294px;
+    width: 100%;
     height: 340px;
 }
 
@@ -241,4 +251,15 @@ h1{
 }
 .swiper-pagination-bullet-active {
     background-color: #ffffff !important;
+}
+
+.booth {
+    width: auto;
+    height: 43px;
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 43px;
+    color: #ffffff;
 }

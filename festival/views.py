@@ -6,37 +6,29 @@ from .models import Booth, BoothEvent, Food, Menu, Notice
 def home(request):
     return render(request,'main.html')
 
-def getBooths(request):
+def booth(request):
     booths = Booth.objects.all()
     return render(request, 'booth.html', {'booths' : booths})
 
-def getBooths2(request):
-    return render(request, 'booth2.html')
+def booth2(request):
+    booths = Booth.objects.all()
+    events = BoothEvent.objects.all()
+    return render(request, 'booth2.html', {'booths' : booths, 'events' : events})
 
-def getBoothById(request, booth_id):
-    booth = Booth.objects.get(pk = booth_id)
-    return render(request, 'booth.html', {'booth' : booth})
+def dday(request):
+    return render(request,'dday.html')
 
-def getBoothEvents(request, booth_id):
-    boothEvent = BoothEvent.objects.filter(booth = booth_id)
-    return render(request, 'booth.html', {'boothEvent' : boothEvent})
-
-def getFoods(request):
+def food(request):
     foods = Food.objects.all()
-    return render(request, 'food.html', {'foods' : foods})
+    menus = Menu.objects.all()
+    return render(request, 'food.html', {'foods' : foods, 'menus' : menus})
 
-def getFoodById(request, food_id):
-    food = Food.objects.get(pk = food_id)
-    return render(request, 'food.html', {'food' : food})
-
-def getFoodMenus(request, food_id):
-    menu = Menu.objects.filter(name = food_id)
-    return render(request, 'food.html', {'menu' : menu})
-
-def getNotices(request):
+def info(request):
     notices = Notice.objects.all()
-    return render(request, 'notice.html', {'notices' : notices})
+    return render(request, 'info.html', {'notices' : notices})
 
-def getNoticeById(request, notice_id):
-    notice = Notice.objects.get(pk = notice_id)
-    return render(request, 'notice.html', {'notice' : notice})
+def navbar(request):
+    return render(request,'navbar.html')
+
+def schedule(request):
+    return render(request,'schedule.html')    

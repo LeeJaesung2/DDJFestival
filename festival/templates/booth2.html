@@ -1,4 +1,6 @@
+{% extends 'footer.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>booth</title>
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
     <link rel="stylesheet" href="{% static 'css/booth2.css' %}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <script src="./booth2.js" defer></script>
+    <script src=/static/js/booth2.js defer></script>
   </head>
   <body>
     <div class="container">
@@ -20,17 +24,18 @@
     </div>
 
     <div class="see-btn">
-      <button class="total">한눈에 보기</button>
+      <button class="total" onclick="location.href='{% url 'booth' %}'">한눈에 보기</button>
       <button class="part">부스별 보기</button>
     </div>
 
     <section class="booth-container">
       <!-- 펼치기 전  -->
-      <div class="booth-box" id="1" onclick="onClickEvent(this.id);">
+      {% for booth in booths %}
+      <div class="booth-box" id="{{booth.id}}" onclick="onClickEvent(this.id);">
         <div class="booth-before">
           <div class="title-wrap">
-            <div class="booth-name">멋쟁이 사자처럼</div>
-            <div class="booth-info">웹 개발 및 창업 동아리</div>
+            <div class="booth-name">{{booth.name}}</div>
+            <div class="booth-info">{{booth.sub_title}}</div>
           </div>
           <span class="material-symbols-outlined"> expand_more </span>
         </div>
@@ -41,109 +46,32 @@
         <div class="booth-detail-container">
           <div class="booth-detail-intro-container">
             <hr class="line" />
-            <h3 class="introduce">소개</h3>
+            <h3 class="introduce">소개</h3>            
             <div class="booth-introduce">
-              자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이
-              사자처럼입니다.
+              {{booth.intro}}
             </div>
           </div>
 
-          <div class="booth-detail-event-container">
+          <div class="booth-detail-event-container">            
             <div class="event">진행 이벤트</div>
+            {% for event in events %}
             <ul class="booth-event">
-              <li>풍선 다트게임</li>
-              <li>추억의 달고나 만들기</li>
-              <li>추억의 뽑기(경품)</li>
+              {% if event.booth.name == booth.name %}
+              <li>{{event.title}}</li>
+              {% endif %}
             </ul>
+            {% endfor %}
           </div>
 
           <div class="booth-detail-location-container">
             <div class="location">위치</div>
-            <div class="booth-location">복지관 바로 옆. 중앙식장 정문방향</div>
+            <div class="booth-location">{{booth.location}}</div>
           </div>
         </div>
       </div>
-      <!-- 펼치기 후 상세내용 여기까지  -->
-
-      <!-- 펼치기 전  -->
-      <div class="booth-box" id="2" onclick="onClickEvent(this.id);">
-        <div class="booth-before">
-          <div class="title-wrap">
-            <div class="booth-name">보라소라</div>
-            <div class="booth-info">웹 개발 및 창업 동아리</div>
-          </div>
-          <span class="material-symbols-outlined"> expand_more </span>
-        </div>
-
-        <!-- 펼치기 전 여기까지  -->
-
-        <!-- 펼치기 후 상세내용  -->
-        <div class="booth-detail-container">
-          <div class="booth-detail-intro-container">
-            <hr class="line" />
-            <h3 class="introduce">소개</h3>
-            <div class="booth-introduce">
-              자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이
-              사자처럼입니다.
-            </div>
-          </div>
-
-          <div class="booth-detail-event-container">
-            <div class="event">진행 이벤트</div>
-            <ul class="booth-event">
-              <li>풍선 다트게임</li>
-              <li>추억의 달고나 만들기</li>
-              <li>추억의 뽑기(경품)</li>
-            </ul>
-          </div>
-
-          <div class="booth-detail-location-container">
-            <div class="location">위치</div>
-            <div class="booth-location">복지관 바로 옆. 중앙식장 정문방향</div>
-          </div>
-        </div>
-      </div>
-      <!-- 펼치기 후 상세내용 여기까지  -->
-
-      <!-- 펼치기 전  -->
-      <div class="booth-box" id="3" onclick="onClickEvent(this.id);">
-        <div class="booth-before">
-          <div class="title-wrap">
-            <div class="booth-name">그린저니</div>
-            <div class="booth-info">웹 개발 및 창업 동아리</div>
-          </div>
-          <span class="material-symbols-outlined"> expand_more </span>
-        </div>
-
-        <!-- 펼치기 전 여기까지  -->
-
-        <!-- 펼치기 후 상세내용  -->
-        <div class="booth-detail-container">
-          <div class="booth-detail-intro-container">
-            <hr class="line" />
-            <h3 class="introduce">소개</h3>
-            <div class="booth-introduce">
-              자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이
-              사자처럼입니다.
-            </div>
-          </div>
-
-          <div class="booth-detail-event-container">
-            <div class="event">진행 이벤트</div>
-            <ul class="booth-event">
-              <li>풍선 다트게임</li>
-              <li>추억의 달고나 만들기</li>
-              <li>추억의 뽑기(경품)</li>
-            </ul>
-          </div>
-
-          <div class="booth-detail-location-container">
-            <div class="location">위치</div>
-            <div class="booth-location">복지관 바로 옆. 중앙식장 정문방향</div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
       <!-- 펼치기 후 상세내용 여기까지  -->
     </section>
   </body>
 </html>
+{% endblock %}

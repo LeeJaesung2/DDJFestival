@@ -1,9 +1,10 @@
 body {
-    background-color: black;
-    margin: 24px 48px 24px 48px;
+    background-color: #0d0d0d;
+    height: 100%;
 }
 
-.footer {
+.footer {    
+    margin: 4rem 2rem 2rem 2rem;
     text-decoration: none;
     color: white;
     font-family: 'Pretendard';

@@ -1,4 +1,6 @@
+{% extends 'footer.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link
@@ -15,9 +19,6 @@
 </head>
 <body>
     <div id="wrapper">
-        <button class="navicon">
-            <img src="/static/image/main/menu.svg" width="20px" height="20px"/>
-        </button>
         <!-- Main -->
         <section id="main" class="mainsection">
             <div class="INFO">
@@ -37,7 +38,7 @@
         <!-- LineUp -->
         <section id="lineup" class="lineupsection">
             <p class="ftv">2022 FESTIVAL</p>
-            <h1>LINE UP</h1>
+            <div class="booth">LINE UP</div>
             <p class="intro">2022 개척대동제에 올 가수는 누구일까요?</p>
             <div class="days">
                 <a href="#swiper-lineup1"><button class="day">WED</button></a>
@@ -59,7 +60,7 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div>
-                <button class="gobutton">
+                <button class="gobutton" onclick="location.href='{% url 'schedule' %}'">
                     <p>축제 일정 보러가기</p>
                     <img src="/static/image/main/right.svg" width='20px' height="20px"/>
                 </button>
@@ -68,24 +69,24 @@
         <!-- Booth -->
         <section id="booth" class="boothsection">
             <p class="ftv">2022 FESTIVAL</p>
-            <h1>BOOTH</h1>
+            <div class="booth">BOOTH</div>
             <p class="intro">개척대동제의 축제 부스들을 구경해보세요</p>
             <div class="swiper mySwiper2" style="height: 390px">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" >
-                        <img class='booth1' src="/static/image/main/loading.png" style="width: 291px; height: 291px;"/>
+                        <img class='booth1' src="/static/image/main/loading.png" style="height: 291px;"/>
                     </div>
                     <div class="swiper-slide" >
-                        <img class='booth1' src="/static/image/main/loading.png" style="width: 291px; height: 291px;"/>
+                        <img class='booth1' src="/static/image/main/loading.png" style="height: 291px;"/>
                     </div>
                     <div class="swiper-slide">
-                        <img class='booth1' src="/static/image/main/loading.png" style="width: 291px; height: 291px;"/>
+                        <img class='booth1' src="/static/image/main/loading.png" style="height: 291px;"/>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
             <div>
-                <button class="gobutton">
+                <button class="gobutton" onclick="location.href='{% url 'booth' %}'">
                     <p>축제 부스 구경가기</p>
                     <img src="/static/image/main/right.svg" width='20px' height="20px"/>
                 </button>
@@ -94,24 +95,24 @@
         <!-- Food -->
         <section id="food" class="foodsection">
             <p class="ftv">2022 FESTIVAL</p>
-            <h1>FOOD</h1>
+            <div class="booth">FOOD</div>
             <p class="intro">개척대동제의 축제 먹거리들을 구경해보세요</p>
             <div class="swiper mySwiper3" style="height: 270px">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" >
-                        <img class='booth1' src="/static/image/main/loading2.png" style="width: 291px; height: 170px;"/>
+                        <img class='booth1' src="/static/image/main/loading2.png" style="height: 170px;"/>
                     </div>
                     <div class="swiper-slide" >
-                        <img class='booth1' src="/static/image/main/loading2.png" style="width: 291px; height: 170px;"/>
+                        <img class='booth1' src="/static/image/main/loading2.png" style="height: 170px;"/>
                     </div>
                     <div class="swiper-slide">
-                        <img class='booth1' src="/static/image/main/loading2.png" style="width: 291px; height: 170px;"/>
+                        <img class='booth1' src="/static/image/main/loading2.png" style="height: 170px;"/>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
             <div>
-                <button class="gobutton">
+                <button class="gobutton" onclick="location.href='{% url 'food' %}'">
                     <p>푸드트럭 구경가기</p>
                     <img src="/static/image/main/right.svg" width='20px' height="20px"/>
                 </button>
@@ -127,3 +128,4 @@
     <script src="/static/js/main.js"></script>
 </body>
 </html>
+{% endblock %}

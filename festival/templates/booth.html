@@ -1,4 +1,6 @@
+{% extends 'footer.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +18,8 @@
 
     <section class="see-btn">
       <button class="total">한눈에 보기</button>
-      <button class="part">부스별 보기</button>
+      <button class="part" onclick="location.href='{% url 'booth2' %}'">부스별 보기</button>
     </section>
   </body>
 </html>
+{% endblock %}

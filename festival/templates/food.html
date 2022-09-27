@@ -1,4 +1,6 @@
+{% extends 'footer.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +17,7 @@
     <!--font aws-->
     <link rel="stylesheet" href="{% static 'css/food.css' %}" />
 
-    <script src="./food.js" defer></script>
+    <script src="/static/js/food.js" defer></script>
     <title>푸드트럭</title>
   </head>
   <body>
@@ -48,11 +50,13 @@
         </div>
 
         <!-- 여기서 부터 -->
-        <div class="truck-box" id="1" onclick="onClickEvent(this.id);">
+        {% for food in foods %}
+        <div class="truck-box" id="{{food.id}}" onclick="onClickEvent(this.id);">
           <div class="food-truck-before">
-            <div class="food-truck-name-time-container" id="1">
-              <span class="food-truck-name">푸드트럭</span>
-              <span class="food-truck-time">운영 시간 10:00 ~ 17:00</span>
+            <div class="food-truck-name-time-container" id="{{food.id}}">
+              <span class="food-truck-name">{{food.name}}</span>
+              <span class="food-truck-time">운영 시간 {{food.time}}</span>
+              <span class="food-truck-time">장소 {{food.location}}</span>
             </div>
 
             <span class="material-symbols-outlined"> expand_more </span>
@@ -62,72 +66,25 @@
           <div class="truck-box-detail">
             <img
               class="food-truck-image"
-              src="{% static 'image/food_truck.png' %}"
+              src="/{{food.image}}"
             />
-
             <div class="food-truck-menus-container">
               <h3>대표메뉴</h3>
-              <div class="food-truck-menu">🍕 포테이토 피자 12000원</div>
-              <div class="food-truck-menu">🍔 민트초코 햄버거 1100원</div>
+              {% for menu in menus %}
+              {% if food.name == menu.name.name %}
+              <div>
+                <img src="/{{menu.emoticon}}" width="16" height="16" style="display:inline-block;vertical-align:top;">
+                <div class="food-truck-menu" style="display: inline-block"> {{menu.food_name}} {{menu.price}}</div>
+              </div>
+              {% endif %}
+              {% endfor %}
             </div>
           </div>
         </div>
-        <!-- 여기까지-->
-
-        <!-- 여기서 부터 -->
-        <div class="truck-box" id="2" onclick="onClickEvent(this.id);">
-          <div class="food-truck-before">
-            <div class="food-truck-name-time-container">
-              <span class="food-truck-name">푸드트럭</span>
-              <span class="food-truck-time">운영 시간 10:00 ~ 17:00</span>
-            </div>
-
-            <span class="material-symbols-outlined"> expand_more </span>
-          </div>
-
-          <!-- 클릭 했을 때 나오는 상세 부분-->
-          <div class="truck-box-detail">
-            <img
-              class="food-truck-image"
-              src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201805/01/321d1bd8-542b-44d6-99ee-ebcb331c177f.jpg"
-            />
-
-            <div class="food-truck-menus-container">
-              <h3>대표메뉴</h3>
-              <div class="food-truck-menu">🍕 포테이토 피자 12000원</div>
-              <div class="food-truck-menu">🍔 민트초코 햄버거 1100원</div>
-            </div>
-          </div>
-        </div>
-        <!-- 여기까지-->
-
-        <!-- 여기서 부터 -->
-        <div class="truck-box" id="3" onclick="onClickEvent(this.id);">
-          <div class="food-truck-before">
-            <div class="food-truck-name-time-container">
-              <span class="food-truck-name">푸드트럭</span>
-              <span class="food-truck-time">운영 시간 10:00 ~ 17:00</span>
-            </div>
-
-            <span class="material-symbols-outlined"> expand_more </span>
-          </div>
-
-          <!-- 클릭 했을 때 나오는 상세 부분-->
-          <div class="truck-box-detail">
-            <img
-              class="food-truck-image"
-              src="https://www.smlounge.co.kr/upload/living/article/201511/thumb/20353-27912-sampleM.jpg"
-            />
-
-            <div class="food-truck-menus-container">
-              <h3>대표메뉴</h3>
-              <div class="food-truck-menu">🍕 포테이토zz 피자 12000원</div>
-              <div class="food-truck-menu">🍔 민트초코zz 햄버거 1100원</div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
         <!-- 여기까지-->
       </section>
     </div>
   </body>
 </html>
+{% endblock %}
