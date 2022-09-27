@@ -173,3 +173,23 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 myvenv/
+
+project_folder/
+    .config_secret/
+        settings_common.json
+        settings_debug.json
+        settings_deploy.json
+    django_app/
+        config/
+            settings/
+              __init__.py
+              base.py
+              debug.py
+              deploy.py
+            wsgi
+              __init__.py
+              debug.py
+              deploy.py
+            __init__py
+            urls.py
+        manage.py 

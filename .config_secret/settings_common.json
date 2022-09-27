@@ -1,0 +1,5 @@
+{
+    "django" : {
+        "secret_key" : "django-insecure-b)gj%p*mb-zg7v3stxdove_5d8p3h*(t1g=bf=1xw!n!#ik#(#"
+    }
+}
