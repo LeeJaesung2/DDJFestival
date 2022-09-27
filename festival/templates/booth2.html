@@ -1,4 +1,6 @@
+{% extends 'footer.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>booth</title>
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
     <link rel="stylesheet" href="{% static 'css/booth2.css' %}" />
     <link
       rel="stylesheet"
@@ -42,17 +46,21 @@
         <div class="booth-detail-container">
           <div class="booth-detail-intro-container">
             <hr class="line" />
-            <h3 class="introduce">소개</h3>
+            <h3 class="introduce">소개</h3>            
             <div class="booth-introduce">
               {{booth.intro}}
             </div>
           </div>
 
-          <div class="booth-detail-event-container">
+          <div class="booth-detail-event-container">            
             <div class="event">진행 이벤트</div>
+            {% for event in events %}
             <ul class="booth-event">
-              <li>oo</li>
+              {% if event.booth.name == booth.name %}
+              <li>{{event.title}}</li>
+              {% endif %}
             </ul>
+            {% endfor %}
           </div>
 
           <div class="booth-detail-location-container">
@@ -66,3 +74,4 @@
     </section>
   </body>
 </html>
+{% endblock %}

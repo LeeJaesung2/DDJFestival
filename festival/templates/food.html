@@ -1,4 +1,6 @@
+{% extends 'footer.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,7 +53,7 @@
         {% for food in foods %}
         <div class="truck-box" id="{{food.id}}" onclick="onClickEvent(this.id);">
           <div class="food-truck-before">
-            <div class="food-truck-name-time-container" id="1">
+            <div class="food-truck-name-time-container" id="{{food.id}}">
               <span class="food-truck-name">{{food.name}}</span>
               <span class="food-truck-time">운영 시간 {{food.time}}</span>
               <span class="food-truck-time">장소 {{food.location}}</span>
@@ -64,12 +66,18 @@
           <div class="truck-box-detail">
             <img
               class="food-truck-image"
-              src="{{food.image}}"
+              src="/{{food.image}}"
             />
-
             <div class="food-truck-menus-container">
               <h3>대표메뉴</h3>
-              <div class="food-truck-menu"></div>
+              {% for menu in menus %}
+              {% if food.name == menu.name.name %}
+              <div>
+                <img src="/{{menu.emoticon}}" width="16" height="16" style="display:inline-block;vertical-align:top;">
+                <div class="food-truck-menu" style="display: inline-block"> {{menu.food_name}} {{menu.price}}</div>
+              </div>
+              {% endif %}
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -79,3 +87,4 @@
     </div>
   </body>
 </html>
+{% endblock %}

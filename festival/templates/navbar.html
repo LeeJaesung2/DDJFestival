@@ -22,7 +22,7 @@
         <div class="backdrop"></div>
         <div class="menu">
             <li><a href="{% url 'home' %}">HOME</a></li>
-            <li><a href="">SCHEDULE</a></li>
+            <li><a href="{% url 'schedule' %}">SCHEDULE</a></li>
             <li><a href="{% url 'booth' %}">BOOTH</a></li>
             <li><a href="{% url 'food' %}">FOOD</a></li>
             <li><a href="{% url 'info' %}">INFO</a></li>
@@ -31,4 +31,6 @@
     </div>
     
 </body>
+{% block content %}
+{% endblock %}
 </html>

@@ -7,12 +7,13 @@
 }
 
 body {
-  background-color: black;
+  background-color: #0d0d0d;
+  height: 100%;
 }
 
 .title-container {
-  width: 100vw;
-  height: 20vh;
+  width: 100%;
+  margin-top: 7.125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,22 +21,26 @@ body {
 }
 
 .festival-sub-font-style {
+  width: 117px;
+  height: 19px;
   font-family: "Pretendard";
   font-size: 1rem;
   color: var(--highlight-font);
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .food-font-style {
+  width: 232px;
+  height: 43px;
   font-family: "Pretendard";
   font-weight: 800;
   font-size: 2.25rem;
   color: var(--default-font);
+  line-height: 43px;
 }
 
 .location-container {
-  margin: 0 2rem 2.688rem 2rem;
+  margin: 2.3125rem 2rem 2.688rem 2rem;
 }
 
 .section-title-container {
