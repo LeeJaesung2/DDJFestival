@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -41,19 +40,19 @@
             <div class="booth">LINE UP</div>
             <p class="intro">2022 개척대동제에 올 가수는 누구일까요?</p>
             <div class="days">
-                <a href="#swiper-lineup1"><button class="day">WED</button></a>
-                <button class="day"><a href="#swiper-lineup2">THU</a></button>
-                <button class="day"><a href="#swiper-lineup3">FRI</a></button>
+                <button class="day" data-activenum="1">WED</button>
+                <button class="day" data-activenum="2">THU</button>
+                <button class="day" data-activenum="3">FRI</button>
             </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+            <div class="swiper mySwiper" style="position: relative;">
+                <div class="swiper-wrapper" style="position:absolute;">
                     <div class="swiper-slide">
                         <img class="lineup1" src='/static/image/main/lineup1.png' alt='아이유'/>
                     </div>
                     <div class="swiper-slide">
                         <img class="lineup1" src='/static/image/main/lineup2.png' alt='윤하'/>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" >
                         <img class="lineup1" src='/static/image/main/lineup3.png' alt='뉴진스'/>
                     </div>
                 </div>
