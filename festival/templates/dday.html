@@ -3,24 +3,30 @@
 {% block content %}
 <!DOCTYPE html>
 <html lang="kor">
-<head>
+  <head>
     <link rel="stylesheet" href="{% static 'css/dday.css' %}" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D-day</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrap1">
-        <div class="wrap2">
-            <img class="dday_title" src="{% static 'image/개척대동제로고-2022.png' %}">
-            <p class="day">10.19 - 10.21</p>
-        </div>
-            <p id="remain-time"></p>
-            <p id="clock"></p>
-            <a href="{% url 'home' %}"><img class="lineup_button" src="{% static 'image/라인업클릭.png' %}"></a>
-            <script src="{% static 'js/dday.js' %}"></script>
+      <div class="wrap2">
+        <img
+          class="dday_title"
+          src="{% static 'image/개척대동제로고-2022.png' %}"
+        />
+        <p class="day">10.19 - 10.21</p>
+      </div>
+      <p id="remain-time"></p>
+      <p id="clock"></p>
+      <a href="{% url 'home' %}"
+        ><img class="lineup_button" src="{% static 'image/라인업클릭.png' %}"
+      /></a>
+      <script src="{% static 'js/dday.js' %}"></script>
+
     </div>
-</body>
+  </body>
 </html>
 {% endblock %}

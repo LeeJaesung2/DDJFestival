@@ -1,4 +1,4 @@
-@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css");
 
 html {
     scroll-behavior: smooth;
@@ -9,6 +9,7 @@ body, p, h1, hr{
     color: white;
     font-weight: 400;
     text-decoration: none;
+    font-family: "Pretendard";
 }
 
 b{
@@ -25,6 +26,7 @@ h1{
     background-color: #0d0d0d;
     text-align: center;
     width: auto;
+    font-family: "Pretendard";
 }
 
 .navicon {
@@ -46,14 +48,15 @@ h1{
 }
 
 .topicon {
+    font-family: "Pretendard";
     position: fixed;
-    top: 640px; right: 30px;
+    top: 700px; right: 7px;
     display: flex;
     text-align: center;
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    background-color: #333333;
+    background-color: #222222;
     font-size: 10px;
     justify-content: center;
     align-items: center;
@@ -61,6 +64,7 @@ h1{
 }
 
 .topicon a {
+    font-family: "Pretendard";
     text-decoration: none;
     color: #ffffff
 }
@@ -72,6 +76,7 @@ h1{
     background-image: url(/static/image/main/background1.jpg);
     align-items: center;
     text-align: center;
+    font-family: "Pretendard";
 }
 
 .mainsection {
@@ -96,7 +101,7 @@ h1{
 
 .intro {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color:white;
     line-height: 30px;
 
@@ -133,22 +138,15 @@ h1{
 .day {
     background-color: transparent;
     border: none;
+    text-decoration: none;
     color: #767676;
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 5px;
+    font-family: "Pretendard";
 }
 
-.day a {
-    text-decoration: none;
-    color: #767676;
-}
-
-.day a:hover {
-    color: #ffffff;
-}
-
-.day:focus{
+.clicked_day{
     color: #ffffff;
     padding-bottom: 2px;
     border-bottom: 3px solid #ffffff;
@@ -262,4 +260,7 @@ h1{
     font-size: 2.25rem;
     line-height: 43px;
     color: #ffffff;
+}
+.swiper-wrapper{
+    transition: transform 0.5s ease-in-out;
 }
