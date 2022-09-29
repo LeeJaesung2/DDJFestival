@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
     <title>booth</title>
-    <link rel="stylesheet" href="booth.css" />
+    <link rel="stylesheet" href="{% static 'css/booth.css' %}" />
     <script
       src="https://kit.fontawesome.com/d35df90ac6.js"
       crossorigin="anonymous"
@@ -24,7 +21,7 @@
     </section>
 
     <section class="map-wrap">
-      <img class="map-img" src="./img/동아리 부스 지도.png" alt="map">
+      <img class="map-img" src="{% static 'image/동아리 부스 지도.png' %}" alt="map">
       <div class="location-wrap" id="location1">
         <button class="location-btn"><i class="fa-solid fa-location-dot" data-name="보라소니" data-info="보라소니 어쩌구 저쩌구" data-event="보라소니이벤트1 보라소니이벤트2 보라소니이벤트3"></i></button>
         <p class="location-name">보라소니</p>
@@ -49,3 +46,4 @@
     </section>
   </body>
 </html>
+{% endblock %}

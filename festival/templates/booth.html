@@ -1,4 +1,4 @@
-{% extends 'footer.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
       src="https://kit.fontawesome.com/d35df90ac6.js"
       crossorigin="anonymous"
     ></script>
-    <script src="././static/js/booth.js" defer></script>
+    <script src="{% static 'js/booth.js' %}" defer></script>
   </head>
   <body>
     <section class="container">
