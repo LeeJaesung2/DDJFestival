@@ -1,4 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="kor">
   <head>
@@ -23,6 +25,8 @@
         ><img class="lineup_button" src="{% static 'image/라인업클릭.png' %}"
       /></a>
       <script src="{% static 'js/dday.js' %}"></script>
+
     </div>
   </body>
 </html>
+{% endblock %}

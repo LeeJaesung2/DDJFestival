@@ -1,4 +1,4 @@
-{% extends 'footer.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
     <!--font aws-->
     <link rel="stylesheet" href="{% static 'css/food.css' %}" />
 
-    <script src="/static/js/food.js" defer></script>
+    <script src="{% static 'js/food.js' %}" defer></script>
     <title>푸드트럭</title>
   </head>
   <body>
