@@ -39,9 +39,7 @@ DEBUG = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = [
-    "203.255.3.66:7372", "127.0.0.1"
-]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
