@@ -1,16 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}    
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
         <title>2022 개척 대동제</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    </head>
-    <body>
 
     <!-- reset.css modern-css-reset -->
     <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
@@ -20,8 +11,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css" />
-</head>
-<body>
 
     <div id="wrapper">
         <!-- Main -->
@@ -46,20 +35,23 @@
             <div class="booth">LINE UP</div>
             <p class="intro">2022 개척대동제에 올 가수는 누구일까요?</p>
             <div class="days">
-                <button class="day" data-activenum="1">WED</button>
+                <button class="day active" data-activenum="1">WED</button>
                 <button class="day" data-activenum="2">THU</button>
                 <button class="day" data-activenum="3">FRI</button>
             </div>
             <div class="swiper mySwiper" style="position: relative;">
                 <div class="swiper-wrapper" style="position:absolute;">
                     <div class="swiper-slide">
-                        <img class="lineup1" src='/static/image/main/lineup1.png' alt='아이유'/>
+                        <img class="lineup1" src='/static/image/main/lineup1.png' alt='현아&던'/>
                     </div>
                     <div class="swiper-slide">
-                        <img class="lineup1" src='/static/image/main/lineup2.png' alt='윤하'/>
+                        <img class="lineup1" src='/static/image/main/lineup2.png' alt='김필'/>
                     </div>
                     <div class="swiper-slide" >
-                        <img class="lineup1" src='/static/image/main/lineup3.png' alt='뉴진스'/>
+                        <img class="lineup1" src='/static/image/main/lineup3.png' alt='스테이씨'/>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img class="lineup1" src='/static/image/main/lineup4.png' alt='하동균'/>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -131,6 +123,4 @@
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="/static/js/main.js"></script>
-</body>
-</html>
 {% endblock %}

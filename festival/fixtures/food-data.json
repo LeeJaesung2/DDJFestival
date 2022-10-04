@@ -1,0 +1,22 @@
+[
+    {
+        "model":"festival.food",
+        "fields":{
+            "id" : 1,
+            "name":"마시따 트럭",
+            "time":"10:00 ~ 17:00",
+            "location":"도서관 앞",
+            "image": "static/image/food/testimg.png"
+        }
+    },
+    {
+        "model":"festival.food",
+        "fields":{
+            "id" : 2,
+            "name":"행복한 트럭",
+            "time":"10:00 ~ 17:00",
+            "location":"럭",
+            "image":"static/image/food/testimg.png"
+        }
+    }
+]
