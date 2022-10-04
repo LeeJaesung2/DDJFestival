@@ -106,6 +106,7 @@ $('.day').each(function(index){
     $(this).attr('day-index', index);
 }).click(function(){
     var index = $(this).attr('day-index');
-    $('.day[day-index='+ index + ']').addClass('clicked_day');
-    $('.day[day-index!=' + index + ']').removeClass('clicked_day');
+    $('.day[day-index=0]').removeClass('active');
+    $('.day[day-index='+ index + ']').addClass('active');
+    $('.day[day-index!=' + index + ']').removeClass('active');
 });
