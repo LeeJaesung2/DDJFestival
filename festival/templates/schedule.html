@@ -1,22 +1,26 @@
-{% extends 'base.html' %}
 {% load static %}
-{% block content %}
+
 <!DOCTYPE html>
 <html lang="kor">
   <head>
-    <link rel="stylesheet" type="text/css" href="/static/css/schedule.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/schedule.css' %}" />
     <title>schedule</title>
-    <script src="https://kit.fontawesome.com/xxxxxxxxcxc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d35df90ac6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 
   </head>
-    <!--
+  
     <div class="wallpaper">
 
-      <i class="fas fa-solid fa-bars"></i>-->
+      <i  class="fas fa-bars"></i>
     
     <div class="upper_wrap">
-      <div class="title_1">2022 FESTIVAL</div>
-      <div class = "title_2">SCHEDULE</div>
+    <div class="title_1">2022 FESTIVAL</div>
+    <div class = "title_2">SCHEDULE</div>
     </div>
 
   <body>
@@ -34,9 +38,11 @@
               <tables id="title">
                 <tr class="tr">
                   <td id="left-td" ></td>
-                  <td id="right-td ">
+                  <div class="right_nav">
+                    <td id="right-td ">
                     <span id="detail"></span>
                   </td>
+                </div>
                 </tr>
               </table>
             </div>
@@ -47,31 +53,27 @@
     
     <br>
     <br>
-    /**/
-    
 
-<div class = "wrap2">
+    <div class = "wrap2">
 
     <div class = "programs">PROGRAMS</div>
-        img src="unsplash_ZUWls_bDgAk.png" alt="Image"
+    
         
         <div class="slidebox">
-          <!-- <input type="radio" name="slide" id="slide01" checked>
-          <input type="radio" name="slide" id="slide02">
-          <input type="radio" name="slide" id="slide03">  -->
+
           
           <div class="slidelist">
             <li class="slideitem">
-              <img  class="slideimg" src="/static/image/notice/01.png">
+              <img  class="slideimg" src="{% static 'image/schedule/01.png' %}">
             </li>
             <li class="slideitem">
-              <img class="slideimg" src="/static/image/notice/02.png">
+              <img class="slideimg" src="{% static 'image/schedule/02.png' %}">
             </li>
             <li class="slideitem">
-              <img  class="slideimg" src="/static/image/notice/03.png">
+              <img  class="slideimg" src="{% static 'image/schedule/03.png' %}">
             </li>
             <li class="slideitem">
-              <img  class="slideimg" src="/static/image/notice/04.png">
+              <img  class="slideimg" src="{% static 'image/schedule/04.png' %}">
             </li>
 
           </div>
@@ -113,40 +115,13 @@
             </div>
           </div>
 
-          <div class="slide-control">
-            <div class="control01">
-              <label for="slide03" class="prev">  </label>
-              <label for="slide02" class="next">  </label>
-            </div>
-            <div class="control02">
-              <label for="slide01" class="prev">  </label>
-              <label for="slide03" class="next">  </label>
-            </div>
-            <div class="control03">
-              <label for="slide02" class="prev">  </label>
-              <label for="slide01" class="next">  </label>
-            </div>
-            
-          </div class="slide-control">
-        </div>
-        <!-- <button class="previous">
-          <img class="previous2" src="./Vector 8.png" alt="arrow" />
-        </button>
-
-        <button class="next">
-          <img class="next2" src="./Vector 9.png" alt="arrow" />
-        </button>  -->
 
     </div>
 
-  
-    
-
-    <script src="/static/js/slideshow_1.js" defer></script>
-    <script src="/static/js/img_slide.js" defer></script>
+    <script src="{% static 'js/slideshow_1.js' %}" defer></script>
+    <!-- <script src="img_slide.js" defer></script> -->
 
   </body>
 
 
 </html>
-{% endblock %}
