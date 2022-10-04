@@ -9,7 +9,7 @@
         }
     },
     {
-        "model": "festival.booth",
+        "model": "festival.menu",
         "fields":{
             "name":1,
             "food_name":"민트초코 햄버거",
