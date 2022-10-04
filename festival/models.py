@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class Booth(models.Model):
     name = models.CharField(max_length=200)
     sub_title = models.TextField()
