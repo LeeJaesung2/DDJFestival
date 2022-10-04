@@ -112,7 +112,7 @@ tr {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 2vw;
 
   font-family: "Pretendard";
