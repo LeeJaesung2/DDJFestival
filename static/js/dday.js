@@ -32,7 +32,6 @@ function getClock() {
     console.log(todayTime);
     console.log(festiTime);
 
-//const countDay = Math.floor(count / (1000*60*60*24));
     let countHour = Math.floor((count / (1000*60*60)) % 24);
     let countMin = Math.floor((count / (1000*60)) % 60);
     let countSec = Math.floor(count / 1000 % 60);
@@ -42,12 +41,7 @@ function getClock() {
     countSec = countSec < 10 ? `0${countSec}`: countSec;
 
     clock.innerText = `${countHour} : ${countMin} : ${countSec}`;
-//const date = new Date();
-//const hours = String(date.getHours()).padStart(2, "0");
-//const min = String(date.getMinutes()).padStart(2, "0");
-//const sec = String(date.getSeconds()).padStart(2, "0");
-//clock.innerText = `${hours} : ${min} : ${sec}`;
-};
+}
 
 getClock();
 setInterval(getClock, 1000);
