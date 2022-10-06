@@ -69,10 +69,12 @@ var pagingSwiper = new Swiper(".mySwiper", {
         type: "bullets",
         clickable: true,
     },
+    // Enable debugger
+    debugger: true,
 });
 
-swiper.controller.control = pagingSwiper;
 
+swiper.controller.control = pagingSwiper;
 var swiper = new Swiper('.mySwiper2', {
     autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
         delay : 3000,   // 시간 설정
