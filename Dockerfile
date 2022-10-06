@@ -12,7 +12,7 @@ ADD . /srv/docker-server
 WORKDIR /srv/docker-server
 
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt && python manage.py makemigrations && python manage.py migrate
 
 
 #EXPOSE 7372
