@@ -52,6 +52,7 @@ var day = ['WED', 'THU', 'FRI', 'SAT']
 
 var swiper = new Swiper('.mySwiper', {
     modules: [myPlugin],
+    spaceBetween: 20,
     
     pagination: {
         el: ".swiper-pagination",
