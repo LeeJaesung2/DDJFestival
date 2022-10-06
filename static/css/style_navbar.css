@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #0d0d0d;
 }
+
 a {
     text-decoration: none;
     color: #7E7386;
@@ -28,6 +29,7 @@ input[id="menuicon"] + label span {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.4);
     transition: all .35s;
+    z-index: 100000;
 }
 input[id="menuicon"] + label span:nth-child(1) {
     top: 0;
