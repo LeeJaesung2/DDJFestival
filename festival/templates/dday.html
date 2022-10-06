@@ -23,4 +23,9 @@
       <script src="{% static 'js/dday.js' %}"></script>
 
     </div>
+    <script>
+      window.addEventListener('click', ()=>{
+        location.href = "{% url 'home' %}";       
+      })
+    </script>
 {% endblock %}
