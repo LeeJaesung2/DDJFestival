@@ -1,0 +1,20 @@
+[
+    {
+        "model": "festival.menu",
+        "fields":{
+            "name":1,
+            "food_name":"포테이토 피자",
+            "emoticon":"static/image/menu/testimg.png",
+            "price":12000
+        }
+    },
+    {
+        "model": "festival.menu",
+        "fields":{
+            "name":1,
+            "food_name":"민트초코 햄버거",
+            "emoticon": "static/image/menu/testimg.png",
+            "price":1100
+        }
+    }
+]

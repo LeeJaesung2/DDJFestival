@@ -48,32 +48,30 @@ function myPlugin({ swiper, extendParams, on }) {
 }
 
 // Init Swiper
+var day = ['WED', 'THU', 'FRI', 'SAT']
+
 var swiper = new Swiper('.mySwiper', {
-    // Install Plugin To Swiper
     modules: [myPlugin],
-    // autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
-    //     delay : 3000,   // 시간 설정
-    //     disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
-    // },
+    
     pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (day[index]) + '</span>';
+            },
+        },
+});
+
+var pagingSwiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: '.swiper-pagination2',
+        type: "bullets",
         clickable: true,
     },
-    // Enable debugger
-    debugger: true,
 });
 
-const datebtns = document.querySelectorAll('.day');
-const lineup_wrapper = document.querySelector('.swiper-wrapper');
-const change_value = lineup_wrapper.clientWidth;
-let activenum = 1;
-
-datebtns.forEach(ele => {
-    ele.addEventListener('click', (e)=>{
-        activenum = Number(ele.dataset.activenum);
-        lineup_wrapper.style.transform = `translateX(${-(activenum-1)*change_value}px)`;        
-    });
-});
+swiper.controller.control = pagingSwiper;
 
 var swiper = new Swiper('.mySwiper2', {
     autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
@@ -99,13 +97,4 @@ var swiper = new Swiper('.mySwiper3', {
     },
     // Enable debugger
     debugger: true,
-});
-
-//clicked js
-$('.day').each(function(index){
-    $(this).attr('day-index', index);
-}).click(function(){
-    var index = $(this).attr('day-index');
-    $('.day[day-index='+ index + ']').addClass('clicked_day');
-    $('.day[day-index!=' + index + ']').removeClass('clicked_day');
 });
