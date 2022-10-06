@@ -9,24 +9,6 @@
             <div class="subtitle">INFO</div>
         </div>
 
-        <div class="gongi">
-        
-            <p class="semititle"><img src="{% static 'image/notice/gongi.png' %}" alt="" width="20px" height="20px"> 공지사항</p>
-            
-            <div class="slide_wrapper">
-
-                <ul class="slides">
-                    {% for notice in notices %}
-                    <li><p class="gongi">{{notice.title|truncatewords:2}}</p>
-                        <p class="sebugongi">{{notice.content|truncatewords:5}}</p>
-                        <p class="gongitime">{{notice.pub_date}}</p>
-                    </li>
-                    {% endfor %}
-                </ul>
-        
-
-            </div>     
-        </div>
 
         <div class="gongi">
         <p class="semititle"><img src="{% static 'image/notice/map.png' %}" alt="" width="20px" height="20px"> 오시는 길</p>
