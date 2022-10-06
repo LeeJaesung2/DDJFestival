@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css/schedule.css" />
+    <title>schedule</title>
+    <script src="https://kit.fontawesome.com/xxxxxxxxcxc.js" crossorigin="anonymous"></script>
+
+  </head>
+    <!--
+    <div class="wallpaper">
+
+      <i class="fas fa-solid fa-bars"></i>-->
+    
+    <div class="upper_wrap">
+      <div class="title_1">2022 FESTIVAL</div>
+      <div class = "title_2">SCHEDULE</div>
+    </div>
+
+  <body>
+
+    <div class="wrap">
+      <div class="tab_menu">
+        <div class="list">
+          <div class="is_on">
+            <div class="btn_collect">
+            <button class="prev_btn" onClick="prevButton()"> < </button>
+            <a href="#tab1" class="btn" id="title-date">10.19 WED</a>
+            <button class="next_btn" onclick="nextButton()"> > </button>
+          </div>
+            <div id="tab1" class="cont">
+              <tables id="title">
+                <tr class="tr">
+                  <td id="left-td" ></td>
+                  <td id="right-td ">
+                    <span id="detail"></span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    /**/
+    
+
+<div class = "wrap2">
+
+    <div class = "programs">PROGRAMS</div>
+        img src="unsplash_ZUWls_bDgAk.png" alt="Image"
+        
+        <div class="slidebox">
+          <!-- <input type="radio" name="slide" id="slide01" checked>
+          <input type="radio" name="slide" id="slide02">
+          <input type="radio" name="slide" id="slide03">  -->
+          
+          <div class="slidelist">
+            <li class="slideitem">
+              <img  class="slideimg" src="/static/image/notice/01.png">
+            </li>
+            <li class="slideitem">
+              <img class="slideimg" src="/static/image/notice/02.png">
+            </li>
+            <li class="slideitem">
+              <img  class="slideimg" src="/static/image/notice/03.png">
+            </li>
+            <li class="slideitem">
+              <img  class="slideimg" src="/static/image/notice/04.png">
+            </li>
+
+          </div>
+          <div class="slide-circle-box">
+            <div class="slide-circle"></div>
+            <div class="slide-circle"></div>
+            <div class="slide-circle"></div>
+            <div class="slide-circle"></div>
+          </div>
+
+          <div class="program_info_box">
+            <div class="program_text">
+              <div class="program_title">재미있는 프로그램1</div>
+              <div class="program_detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has beeot only five centuries, but 
+              </div>
+            </div>
+            <div class="program_text">
+              <div class="program_title">재미있는 프로그램2</div>
+              <div class="program_detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has beeot only five centuries, but 
+              </div>
+            </div>
+            <div class="program_text">
+              <div class="program_title">재미있는 프로그램3</div>
+              <div class="program_detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has beeot only five centuries, but 
+              </div>
+            </div>
+            <div class="program_text">
+              <div class="program_title">재미있는 프로그램4</div>
+              <div class="program_detail">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has beeot only five centuries, but 
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-control">
+            <div class="control01">
+              <label for="slide03" class="prev">  </label>
+              <label for="slide02" class="next">  </label>
+            </div>
+            <div class="control02">
+              <label for="slide01" class="prev">  </label>
+              <label for="slide03" class="next">  </label>
+            </div>
+            <div class="control03">
+              <label for="slide02" class="prev">  </label>
+              <label for="slide01" class="next">  </label>
+            </div>
+            
+          </div class="slide-control">
+        </div>
+        <!-- <button class="previous">
+          <img class="previous2" src="./Vector 8.png" alt="arrow" />
+        </button>
+
+        <button class="next">
+          <img class="next2" src="./Vector 9.png" alt="arrow" />
+        </button>  -->
+
+    </div>
+
+  
+    
+
+    <script src="/static/js/slideshow_1.js" defer></script>
+    <script src="/static/js/img_slide.js" defer></script>
+
+  </body>
+
+
+</html>
+{% endblock %}
