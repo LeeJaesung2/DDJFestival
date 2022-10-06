@@ -1,14 +1,15 @@
-@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css");
 
 html {
     scroll-behavior: smooth;
 }
 
-body, p, h1, hr{
+body, p, h1, hr, span{
     margin: 0;
     color: white;
     font-weight: 400;
     text-decoration: none;
+    font-family: "Pretendard";
 }
 
 b{
@@ -25,6 +26,7 @@ h1{
     background-color: #0d0d0d;
     text-align: center;
     width: auto;
+    font-family: "Pretendard";
 }
 
 .navicon {
@@ -46,14 +48,15 @@ h1{
 }
 
 .topicon {
+    font-family: "Pretendard";
     position: fixed;
-    top: 640px; right: 30px;
+    top: 700px; right: 7px;
     display: flex;
     text-align: center;
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    background-color: #333333;
+    background-color: #222222;
     font-size: 10px;
     justify-content: center;
     align-items: center;
@@ -61,6 +64,7 @@ h1{
 }
 
 .topicon a {
+    font-family: "Pretendard";
     text-decoration: none;
     color: #ffffff
 }
@@ -72,6 +76,7 @@ h1{
     background-image: url(/static/image/main/background1.jpg);
     align-items: center;
     text-align: center;
+    font-family: "Pretendard";
 }
 
 .mainsection {
@@ -96,7 +101,7 @@ h1{
 
 .intro {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color:white;
     line-height: 30px;
 
@@ -133,30 +138,27 @@ h1{
 .day {
     background-color: transparent;
     border: none;
+    text-decoration: none;
     color: #767676;
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 5px;
+    font-family: "Pretendard";
+    cursor: pointer;
 }
 
-.day a {
-    text-decoration: none;
-    color: #767676;
-}
-
-.day a:hover {
-    color: #ffffff;
-}
-
-.day:focus{
+.active {
     color: #ffffff;
     padding-bottom: 2px;
     border-bottom: 3px solid #ffffff;
 }
 
-.lineup1 {
-    border-bottom: 3px solid white;
-}
+
+/* .clicked_day{
+    color: #ffffff;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #ffffff;
+} */
 
 .dotbox {
     display: flex;
@@ -172,8 +174,6 @@ h1{
 }
 
 .gobutton {
-    font-size: 16px;
-    font-weight: 700;
     background-color: #333333;
     border: none;
     color: white;
@@ -183,9 +183,15 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .gobutton p {
     font-size: 16px;
+    font-weight: 500;
+}
+.gobutton:hover {
+    background-color: #414141;
+    transition: 0.3s ease-in-out;   
 }
 
 /* BOOTH */
@@ -225,10 +231,14 @@ h1{
 
 
 /* 이미지 슬라이드 */
-.swiper {
+.mySwiper {
     width: 100%;
-    height: 390px;
+    height: 485px;
     margin-bottom: 10px;
+}
+
+.mySwiper .swiper-wrapper {
+    margin-top: 100px;
 }
 
 .swiper-slide {
@@ -237,21 +247,62 @@ h1{
 }
 
 .swiper-slide img {
-    width: 100%;
-    height: 340px;
+    width: 285px;
+    height: auto;
 }
 
-.swiper-pagenation {
+/*pagination*/
+#daypage {
+    padding-top: 25px;
+    position: relative;
+    top: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+#daypage .swiper-pagination-bullet {
+    width: 50px;
+    height: auto;
+    margin: 0 5px;
+    padding: 10px 5px;
+	border-radius: 0 !important;
+	text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-family: "Pretendard";
+	color:#767676;
+	opacity: 1;
+	background-color: transparent !important;
+}
+#daypage .swiper-pagination-bullet {
+    width: 50px;
+    height: auto;
+    margin: 0 5px;
+    padding: 10px 5px;
+	border-radius: 0 !important;
+	text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 5px;
+    font-family: "Pretendard";
+	color:#767676;
+	opacity: 1;
+	background-color: transparent !important;
+}
+
+#daypage .swiper-pagination-bullet-active {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Pretendard";
+}
+
+#dotpage {
     position: absolute;
+    margin-bottom: 5px;
 }
 
-.swiper-pagination-bullet {
-    background-color: #767676 !important;
-    opacity: 1 !important;
-}
-.swiper-pagination-bullet-active {
-    background-color: #ffffff !important;
-}
 
 .booth {
     width: auto;
@@ -262,4 +313,16 @@ h1{
     font-size: 2.25rem;
     line-height: 43px;
     color: #ffffff;
+}
+
+
+.mySwiper2 {
+    width: 100%;
+    height: 390px;
+    margin-bottom: 10px;
+}
+.mySwiper3 {
+    width: 100%;
+    height: 390px;
+    margin-bottom: 10px;
 }
