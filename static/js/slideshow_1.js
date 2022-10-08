@@ -40,7 +40,7 @@ const tabDetail = [
     date: "10.20 THUR",
     detail: [
       {
-        time: "주간상시",
+        time: "주간 상시",
         data: "포토 체험존 운영",
         detail: "(사진 촬영 기법 강좌, 포토존 설치)",
       },
@@ -71,8 +71,8 @@ const tabDetail = [
     date: "10.21 FRI",
     detail: [
       {
-        time: "포토 체험존 운영",
-        data: "주간 상시",
+        time: "주간 상시",
+        data: "포토 체험존 운영",
         detail: "(사진 촬영 기법 강좌, 포토존 설치)",
       },
       {
@@ -137,6 +137,8 @@ function dataOpen(data) {
         tdObj.innerHTML = element.detail[i].time;
         var tdSecondObj = document.createElement("td");
         tagTr.appendChild(tdSecondObj);
+        tdSecondObj.className = "right-td";
+
         tdSecondObj.innerHTML =
           element.detail[i].data + "<br />" + element.detail[i].detail;
 
