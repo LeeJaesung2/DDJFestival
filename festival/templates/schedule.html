@@ -1,119 +1,112 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/schedule.css' %}" />
-    <title>schedule</title>
-    <script
-      src="https://kit.fontawesome.com/d35df90ac6.js"
-      crossorigin="anonymous"
-    ></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/schedule.css' %}" />
+<title>schedule</title>
+<script
+  src="https://kit.fontawesome.com/d35df90ac6.js"
+  crossorigin="anonymous"
+></script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  rel="stylesheet"
+/>
 
-  
-    <div class="wallpaper">
-
-    
-    <div class="upper_wrap">
+<div class="wallpaper">
+  <div class="upper_wrap">
     <div class="title_1">2022 FESTIVAL</div>
-    <div class = "title_2">SCHEDULE</div>
-    </div>
+    <div class="title_2">SCHEDULE</div>
+  </div>
 
-    <div class="wrap">
-      <div class="tab_menu">
-        <div class="list">
-          <div class="is_on">
-            <div class="btn_collect">
-            <button class="prev_btn" onClick="prevButton()"> < </button>
+  <div class="wrap">
+    <div class="tab_menu">
+      <div class="list">
+        <div class="is_on">
+          <div class="btn_collect">
+            <button class="prev_btn" onClick="prevButton()"><</button>
             <a href="#tab1" class="btn" id="title-date">10.19 WED</a>
-            <button class="next_btn" onclick="nextButton()"> > </button>
+            <button class="next_btn" onclick="nextButton()">></button>
           </div>
-            <div id="tab1" class="cont">
-              <tables id="title">
-                <tr class="tr">
-                  <td id="left-td" ></td>
-                  <div class="right_nav">
-                    <td id="right-td ">
-                    <span id="detail"></span>
-                  </td>
-                </div>
-                </tr>
-              </table>
-            </div>
+          <div id="tab1" class="cont">
+            <table id="title">
+              <tr class="tr">
+                <td id="left-td"></td>
+                <!--div class="right_nav"-->
+                <td class="right-td" id="right-td ">
+                  <span id="detail"></span>
+                </td>
+                <!--/div-->
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
-    
-    <br>
-    <br>
+  </div>
 
-    <div class = "wrap2">
+  <br />
+  <br />
 
-    <div class = "programs">PROGRAMS</div>
-    
-        
-        <div class="slidebox">
+  <div class="wrap2">
+    <div class="programs">PROGRAMS</div>
 
-          
-          <div class="slidelist">
-            <li class="slideitem">
-              <img  class="slideimg" src="{% static 'image/schedule/01.png' %}">
-            </li>
-            <li class="slideitem">
-              <img class="slideimg" src="{% static 'image/schedule/02.png' %}">
-            </li>
-            <li class="slideitem">
-              <img  class="slideimg" src="{% static 'image/schedule/03.png' %}">
-            </li>
-            <li class="slideitem">
-              <img  class="slideimg" src="{% static 'image/schedule/04.png' %}">
-            </li>
+    <div class="slidebox">
+      <div class="slidelist">
+        <li class="slideitem">
+          <img class="slideimg" src="{% static 'image/schedule/01.png' %}" />
+        </li>
+        <li class="slideitem">
+          <img class="slideimg" src="{% static 'image/schedule/02.png' %}" />
+        </li>
+        <li class="slideitem">
+          <img class="slideimg" src="{% static 'image/schedule/03.png' %}" />
+        </li>
+        <li class="slideitem">
+          <img class="slideimg" src="{% static 'image/schedule/04.png' %}" />
+        </li>
+      </div>
+      <div class="slide-circle-box">
+        <div class="slide-circle"></div>
+        <div class="slide-circle"></div>
+        <div class="slide-circle"></div>
+        <div class="slide-circle"></div>
+      </div>
 
+      <div class="program_info_box">
+        <div class="program_text">
+          <div class="program_title">재미있는 프로그램1</div>
+          <div class="program_detail">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has beeot only five centuries, but
           </div>
-          <div class="slide-circle-box">
-            <div class="slide-circle"></div>
-            <div class="slide-circle"></div>
-            <div class="slide-circle"></div>
-            <div class="slide-circle"></div>
+        </div>
+        <div class="program_text">
+          <div class="program_title">재미있는 프로그램2</div>
+          <div class="program_detail">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has beeot only five centuries, but
           </div>
-
-          <div class="program_info_box">
-            <div class="program_text">
-              <div class="program_title">재미있는 프로그램1</div>
-              <div class="program_detail">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has beeot only five centuries, but 
-              </div>
-            </div>
-            <div class="program_text">
-              <div class="program_title">재미있는 프로그램2</div>
-              <div class="program_detail">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has beeot only five centuries, but 
-              </div>
-            </div>
-            <div class="program_text">
-              <div class="program_title">재미있는 프로그램3</div>
-              <div class="program_detail">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has beeot only five centuries, but 
-              </div>
-            </div>
-            <div class="program_text">
-              <div class="program_title">재미있는 프로그램4</div>
-              <div class="program_detail">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has beeot only five centuries, but 
-              </div>
-            </div>
+        </div>
+        <div class="program_text">
+          <div class="program_title">재미있는 프로그램3</div>
+          <div class="program_detail">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has beeot only five centuries, but
           </div>
-
-
+        </div>
+        <div class="program_text">
+          <div class="program_title">재미있는 프로그램4</div>
+          <div class="program_detail">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has beeot only five centuries, but
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="{% static 'js/slideshow_1.js' %}" defer></script>
     <!-- <script src="img_slide.js" defer></script> -->
 
-{% endblock %}
+    {% endblock %}
+  </div>
+</div>
