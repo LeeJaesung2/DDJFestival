@@ -9,59 +9,69 @@ const tabDetail = [
     date: "10.19 WED",
     detail: [
       {
-        time: "주간 상시",
-        data: "포토 체험존 운영",
-        detail: "(사진 촬영 기법 강좌, 포토존 설치)",
-      },
-      {
-        time: "10:00~18:00",
+        time: "9:00",
         data: "E-sports 대회",
-        detail: "(LoL,피파4,서든어택 등)",
+        detail: "(학생회관 라운지)",
       },
       {
-        time: "18:00~20:00",
-        data: "동아리 공연",
+        time: "10:00",
+        data: "타로부스",
+        detail: "(중앙잔디광장)",
+      },
+      {
+        time: "18:00",
+        data: "미스터 개척 보디빌딩 대회",
         detail: "(대운동장)",
       },
       {
-        time: "20:00~21:00",
+        time: "20:20",
         data: "개회식",
         detail: "(대운동장)",
       },
       {
-        time: "21:00~22:00",
-        data: "초대가수 공연A",
+        time: "21:30",
+        data: "붗꽃놀이 및 초대가수 공연A",
         detail: "(대운동장)",
       },
     ],
   },
   {
     id: 1,
-    date: "10.20 THUR",
+    date: "10.20 THU",
     detail: [
       {
-        time: "주간상시",
-        data: "포토 체험존 운영",
-        detail: "(사진 촬영 기법 강좌, 포토존 설치)",
+        time: "9:00",
+        data: "E-sports 대회",
+        detail: "(학생회관 라운지)",
       },
       {
-        time: "10:00~18:00",
-        data: "미니 올림픽 및 캠퍼스 투어",
-        detail: "(대운동장, 농구장, 풋살장, 중앙도서관, 학생회관, 각 단과대학)",
+        time: "11:00",
+        data: "뿅뿅 하나 오락실",
+        detail: "(중앙잔디광장)",
       },
       {
-        time: "18:00~20:00",
-        data: "미스터 개척 보디빌딩 대회",
+        time: "15:00",
+        data: "토크콘서트",
+        detail: "(가좌캠퍼스 국제어학원 오디토리움)",
+      },
+      {
+        time: "15:00",
+        data: "영산쇠머리대기 시연회",
         detail: "(대운동장)",
       },
       {
-        time: "20:00~21:00",
+        time: "18:00",
         data: "내외빈 소개",
         detail: "(대운동장)",
       },
       {
-        time: "21:00~22:00",
-        data: "초대가수 공연B",
+        time: "18:30",
+        data: "응답하라 개척스타",
+        detail: "(대운동장)",
+      },
+      {
+        time: "21:30",
+        data: "초청가수 공연",
         detail: "(대운동장)",
       },
     ],
@@ -71,28 +81,33 @@ const tabDetail = [
     date: "10.21 FRI",
     detail: [
       {
-        time: "포토 체험존 운영",
-        data: "주간 상시",
-        detail: "(사진 촬영 기법 강좌, 포토존 설치)",
+        time: "13:00",
+        data: "퍼스널컬러 부스",
+        detail: "(중앙잔디광장)",
       },
       {
-        time: "10:00~18:00",
-        data: "각 대학별 학생회 플리마켓 운영",
-        detail: "()",
+        time: "13:00",
+        data: "하모요",
+        detail: "(중앙잔디광장)",
       },
       {
-        time: "18:00~20:00",
-        data: "개척 가요제 및 개척 베스트 댄서 선발대회",
+        time: "13:00",
+        data: "여성물품나눔행사",
+        detail: "(중앙잔디광장)",
+      },
+      {
+        time: "16:30",
+        data: "동아리 공연",
+        detail: "(중앙잔디광장)",
+      },
+      {
+        time: "20:30",
+        data: "불꽃놀이&폐회식",
         detail: "(대운동장)",
       },
       {
-        time: "20:00~21:00",
-        data: "폐회식, 불꽃놀이",
-        detail: "(대운동장)",
-      },
-      {
-        time: "21:00~22:00",
-        data: "초대가수 공연C",
+        time: "21:300",
+        data: "초대가수 공연",
         detail: "(대운동장)",
       },
     ],
@@ -102,18 +117,18 @@ const tabDetail = [
 function prevButton() {
   if (tabTitleName.innerHTML == "10.19 WED") {
     tabTitleName.innerHTML = "10.21 FRI";
-  } else if (tabTitleName.innerHTML == "10.20 THUR") {
+  } else if (tabTitleName.innerHTML == "10.20 THU") {
     tabTitleName.innerHTML = "10.19 WED";
   } else if (tabTitleName.innerHTML == "10.21 FRI") {
-    tabTitleName.innerHTML = "10.20 THUR";
+    tabTitleName.innerHTML = "10.20 THU";
   }
   dataOpen(tabTitleName.innerHTML);
 }
 
 function nextButton() {
   if (tabTitleName.innerHTML == "10.19 WED") {
-    tabTitleName.innerHTML = "10.20 THUR";
-  } else if (tabTitleName.innerHTML == "10.20 THUR") {
+    tabTitleName.innerHTML = "10.20 THU";
+  } else if (tabTitleName.innerHTML == "10.20 THU") {
     tabTitleName.innerHTML = "10.21 FRI";
   } else if (tabTitleName.innerHTML == "10.21 FRI") {
     tabTitleName.innerHTML = "10.19 WED";
@@ -137,6 +152,8 @@ function dataOpen(data) {
         tdObj.innerHTML = element.detail[i].time;
         var tdSecondObj = document.createElement("td");
         tagTr.appendChild(tdSecondObj);
+        tdSecondObj.className = "right-td";
+
         tdSecondObj.innerHTML =
           element.detail[i].data + "<br />" + element.detail[i].detail;
 

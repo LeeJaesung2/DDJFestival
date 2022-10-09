@@ -42,6 +42,7 @@ i {
 }
 
 .wrap {
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -103,17 +104,20 @@ i {
   border-bottom: 1px solid #fbc22b;
   border-top: 1px solid #fbc22b;
   /*height: 100vw;  /*== 563px*/
-  width: 58vw; /* ==327px*/
+  width: 80vw; /* ==327px*/
   padding: 13px 0;
 }
 
 tr {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 2vw;
+  */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
 
   font-family: "Pretendard";
   font-style: normal;
@@ -124,39 +128,13 @@ tr {
   color: #ffffff;
 }
 
-.right_nav{
-  background-color: #fbc22b;
-  
+.right-td {
+  background-color: rgb(45, 45, 45);
+  padding: 0 14px 2rem 8px;
+
+  grid-row: 1/ -1;
+  grid-column: 2/3;
 }
-
-/*#left-td {
-  font-family: 'Pretendard';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  
-  
-  letter-spacing: 0.2px;
-  
-  color: #FFFFFF;
-  
-}
-
-#right-td {
-  font-family: 'Pretendard';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 26px;
-
-
-letter-spacing: 0.2px;
-
-color: #FFFFFF;
-
-background-color: aliceblue !important;
-} */
 
 #title-date {
   font-family: "Pretendard";

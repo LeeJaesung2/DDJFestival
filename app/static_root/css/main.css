@@ -79,15 +79,16 @@ h1 {
 #main {
   margin: 0 auto;
   margin-bottom: 4.5rem;
-  background-image: url(/static/image/main/background1.jpg);
+  background: url(/static/image/main/backgroundimg.jpg) no-repeat center;
+  background-size: cover;
   align-items: center;
   text-align: center;
   font-family: "Pretendard";
+  height: auto;
 }
 
 .mainsection {
-  max-width: 294px;
-  height: 844px;
+  height: 100vh;
   background-color: white;
   padding-left: 48px;
   padding-right: 48px;
@@ -212,8 +213,8 @@ h1 {
 
 .booth1 {
   margin-top: 50px;
-  border-radius: 50px;
   width: 100%;
+  border-radius: 10px;
 }
 
 /* FOOD */
@@ -247,11 +248,11 @@ h1 {
 
 .swiper-slide {
   width: 100%;
-  background-color: transparent;
+  background: transparent;
 }
 
 .swiper-slide img {
-  width: 285px;
+  width: 95%;
   height: auto;
 }
 
