@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!--font aws-->
+    <link rel="stylesheet" href="{% static 'css/food.css' %}" />
+
+    <script src="{% static 'js/food.js' %}" defer></script>
+    <title>푸드트럭</title>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <span class="festival-sub-font-style"> 2022 FESTIVAL </span>
+        <span class="food-font-style">FOOD TRUCK</span>
+      </div>
+
+      <section class="location-container">
+        <div class="section-title-container">
+          <div class="section-title">🗺 location</div>
+          <div class="section-sub-title">
+            가게 위치를 한번에! 맛집들이 한눈에!
+          </div>
+        </div>
+        <img
+          class="location-map-image"
+          src="{% static 'image/지도.png' %}"
+          alt=""
+        />
+      </section>
+
+      <section class="truck-container">
+        <div class="section-title-container">
+          <div class="section-title">🚛 Truck</div>
+          <div class="section-sub-title">
+            축제하면 먹거리! 오늘 먹을 야식을 골라보세요!
+          </div>
+        </div>
+
+        <!-- 여기서 부터 -->
+        {% for food in foods %}
+        <div class="truck-box" id="{{food.id}}" onclick="onClickEvent(this.id);">
+          <div class="food-truck-before">
+            <div class="food-truck-name-time-container" id="{{food.id}}">
+              <span class="food-truck-name">{{food.name}}</span>
+              <span class="food-truck-time">운영 시간 {{food.time}}</span>
+              <span class="food-truck-time">장소 {{food.location}}</span>
+            </div>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+
+          <!-- 클릭 했을 때 나오는 상세 부분-->
+          <div class="truck-box-detail">
+            <img
+              class="food-truck-image"
+              src="/{{food.image}}"
+            />
+            <div class="food-truck-menus-container">
+              <h3>대표메뉴</h3>
+              {% for menu in menus %}
+              {% if food.name == menu.name.name %}
+              <div>
+                <img src="/{{menu.emoticon}}" width="16" height="16" style="display:inline-block;vertical-align:top;">
+                <div class="food-truck-menu" style="display: inline-block"> {{menu.food_name}} {{menu.price}}</div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- 여기까지-->
+      </section>
+    </div>
+{% endblock %}

@@ -1,0 +1,167 @@
+body {
+  background-color: #0d0d0d;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7.125rem;
+  align-items: center;
+}
+
+.title {
+  width: 117px;
+  height: 19px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #fbc22e;
+}
+
+.booth {
+  margin-left: 20px;
+  width: 127px;
+  height: 43px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 43px;
+  color: #ffffff;
+}
+
+.see-btn {
+  width: 100%;
+  display: flex;
+  margin-top: 37px;
+  justify-content: center;
+}
+
+.total {
+  width: 100px;
+  height: 30px;
+  padding-bottom: 8px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  background-color: #0d0d0d;
+  border-bottom: 2px solid #ffffff;
+}
+
+.total:hover {
+  cursor: pointer;
+}
+
+.part {
+  width: 100px;
+  height: 30px;
+  padding-bottom: 8px;
+  margin-left: 20px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #9b9b9b;
+  border: none;
+  background-color: #0d0d0d;
+}
+
+.part:hover {
+  cursor: pointer;
+}
+
+.map-wrap {
+  position: relative;
+  width: 24.375rem;
+  height: 34.375rem;
+  margin: 0 auto;
+  margin-top: 2.438rem;
+}
+
+.map-img {
+}
+
+.location-wrap {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 7.5rem;
+}
+
+.location-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.fa-location-dot {
+  color: #1e1c71;
+  font-size: 1.25rem;
+}
+
+#location1 {
+  left: 19.063rem;
+  top: 10.5rem;
+}
+
+#location2 {
+  left: 19.875rem;
+  top: 13.563rem;
+}
+
+#location3 {
+  left: 17.813rem;
+  top: 16.938rem;
+}
+
+.location-name {
+  margin-top: 0.25rem;
+}
+
+.booth-popup {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 10.125rem;
+  height: 9.938rem;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 0.938rem;
+  display: none;
+}
+
+.x-btn {
+  position: absolute;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  top: 0.938rem;
+  right: 0.938rem;
+}
+
+.booth-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.booth-info {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #828282;
+  border-bottom: 1px solid #404040;
+  padding-bottom: 0.688rem;
+}
+
+.event-list {
+  color: #828282;
+  padding-left: 1.875rem;
+}

@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}    
+{% block content %}
+        <title>2022 개척 대동제</title>
+
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="{% static 'css/css_reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
+    <link rel="stylesheet" as="style" crossorigin href="{% static 'css/swiper-custom.css' %}" />
+
+    <div id="wrapper">
+        <!-- Main -->
+        <section id="main" class="mainsection">
+            <div class="INFO">
+                <h1 class="date">10.19 - 10.32</h1>
+                <p class="intro">
+                    드디어 3년만에 개척대동제가 개최됩니다!<br/>
+                    코로나 시기로 축제를 즐기기 어려우셨죠?<br/>
+                    낮에는 여러 동아리의 체험 부스와<br/>
+                    밤에는 푸드트럭 및 아티스트의 공연까지<br/>
+                    <b>선선한 가을의 축제가 여러분을 찾아갑니다!</b>
+                </p>
+            </div>
+            <div class="downicon">
+                <a href='#lineup'><img src="/static/image/main/down.svg" width="20px" height="20px" /></a>
+            </div>
+        </section>
+        <!-- LineUp -->
+        <section id="lineup" class="lineupsection">
+            <p class="ftv">2022 FESTIVAL</p>
+            <div class="booth">LINE UP</div>
+            <p class="intro">2022 개척대동제에 올 가수는 누구일까요?</p>
+            <div class="swiper mySwiper" style="position: relative;">
+                <div class="swiper-wrapper" style="position:absolute;">
+                    <div class="swiper-slide">
+                        <img class="lineup1" src='/static/image/main/lineup1.png' alt='현아&던'/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="lineup1" src='/static/image/main/lineup2.png' alt='김필'/>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img class="lineup1" src='/static/image/main/lineup3.png' alt='스테이씨'/>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img class="lineup1" src='/static/image/main/lineup4.png' alt='하동균'/>
+                    </div>
+                </div>
+                <div class="swiper-pagination" id="daypage"></div>
+                <div class="swiper-pagination2" id="dotpage"></div>
+            </div>
+            <div>
+                <button class="gobutton" onclick="location.href='{% url 'schedule' %}'">
+                    <p>축제 일정 보러가기</p>
+                    <img src="/static/image/main/right.svg" width='20px' height="20px"/>
+                </button>
+            </div>
+        </section>
+        <!-- Booth -->
+        <section id="booth" class="boothsection">
+            <p class="ftv">2022 FESTIVAL</p>
+            <div class="booth">BOOTH</div>
+            <p class="intro">개척대동제의 축제 부스들을 구경해보세요</p>
+            <div class="swiper mySwiper2" style="height: 390px">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <img class='booth1' src="/static/image/main/loading.png" style="height: 291px;"/>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img class='booth1' src="/static/image/main/loading.png" style="height: 291px;"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='booth1' src="/static/image/main/loading.png" style="height: 291px;"/>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div>
+                <button class="gobutton" onclick="location.href='{% url 'booth' %}'">
+                    <p>축제 부스 구경가기</p>
+                    <img src="/static/image/main/right.svg" width='20px' height="20px"/>
+                </button>
+            </div>
+        </section>
+        <!-- Food -->
+        <section id="food" class="foodsection">
+            <p class="ftv">2022 FESTIVAL</p>
+            <div class="booth">FOOD</div>
+            <p class="intro">개척대동제의 축제 먹거리들을 구경해보세요</p>
+            <div class="swiper mySwiper3" style="height: 270px">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <img class='booth1' src="/static/image/main/loading2.png" style="height: 170px;"/>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img class='booth1' src="/static/image/main/loading2.png" style="height: 170px;"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='booth1' src="/static/image/main/loading2.png" style="height: 170px;"/>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div>
+                <button class="gobutton" onclick="location.href='{% url 'food' %}'">
+                    <p>푸드트럭 구경가기</p>
+                    <img src="/static/image/main/right.svg" width='20px' height="20px"/>
+                </button>
+            </div>
+        </section>
+        <div class="topicon">
+            <a href="#">TOP</a>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="/static/js/swiper-custom.js"></script>
+    <script src="/static/js/main.js"></script>
+{% endblock %}

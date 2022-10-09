@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <link rel="stylesheet" href="{% static 'css/info.css' %}">
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
+        <title>info</title>
+        <div class="container">
+            <div class="title">2022 FESTIVAL</div>
+            <div class="subtitle">INFO</div>
+        </div>
+
+
+        <div class="gongi">
+        <p class="semititle"><img src="{% static 'image/notice/map.png' %}" alt="" width="20px" height="20px"> 오시는 길</p>
+        <img src="{% static 'image/notice/schoolmap.png' %}" alt="" width="100%" height="230px">
+        </div>
+
+        <div class="gongi">
+        <p class="semititle"><img src="{% static 'image/notice/bus.png' %}" alt="" width="20px" height="20px"> 주요 버스정보</p>
+            <p class="buschul">정문 스타벅스 앞 출발</p>
+            <p class="buschul">학교 정문 앞 출발</p>
+        </div>
+
+
+        <script src="{% static 'js/info.js' %}"></script>
+{% endblock %}
