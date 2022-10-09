@@ -6,7 +6,7 @@
       "name": "알럽커피",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -16,7 +16,7 @@
       "name": "정성초밥",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://mblogthumb-phinf.pstatic.net/MjAxODA3MDFfNTMg/MDAxNTMwNDEzNDUyMjc3.ELskn_ZVYZOdYpkctmrLFTZRJPr_eCIRbagJ4LTMcgcg.jTmWQQPT1C0oCoW-I7AJMig2ctCrUq6XbX3chozomvwg.JPEG.chakagi/IMG_2178.jpg?type=w800"
     }
   },
   {
@@ -26,7 +26,7 @@
       "name": "천사날개",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://mblogthumb-phinf.pstatic.net/MjAxNzA5MjJfMTI5/MDAxNTA2MDc3NzE3OTk1.x1kv_KhM8Td1a8BgL2ZrFmhvCLlVmuat429_TBz_9S0g.vGA-I3Vt6mGqzfiSECUVvU0Xmw49Gx5qu-nP5kX5wLEg.JPEG.yesterday_h/IMG_20170921_205454376.jpg?type=w2"
     }
   },
   {
@@ -34,9 +34,9 @@
     "fields": {
       "id": 4,
       "name": "멕시",
-      "time": "1업데이트 예정",
+      "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -46,7 +46,7 @@
       "name": "세븐데이즈",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -56,7 +56,7 @@
       "name": "미소닭",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -66,7 +66,7 @@
       "name": "피그몬",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -76,7 +76,7 @@
       "name": "쿠바",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://mblogthumb-phinf.pstatic.net/MjAxNzEyMjZfMjA1/MDAxNTE0MjgyNDgwOTAw.tPtUh7j7r5AJM7-rgVBCTzQfCdB-5xmiRizs-Dg-7dcg.9BW9vVnrBUM1FWYzIQqOd_ZmcwzSswmfbBJTNE4W26wg.JPEG.dutchstyle0/%EB%B6%80%EC%82%B0%EC%98%A4%EB%93%9C%EB%84%88%EC%8A%A4.jpg?type=w800"
     }
   },
   {
@@ -86,7 +86,7 @@
       "name": "가을이네",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -96,7 +96,7 @@
       "name": "소이트럭",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -106,7 +106,7 @@
       "name": "중독",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://cdn.imweb.me/thumbnail/20171008/59d9d8b9a5f1b.jpg"
     }
   },
   {
@@ -116,7 +116,7 @@
       "name": "루츠버거",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://mblogthumb-phinf.pstatic.net/MjAxODA2MDVfNCAg/MDAxNTI4MTI0OTY5MTY3.sjVOXUuUN9_VBUbcp0xBDAaYIDj8gMgnXCrFMjdcpD8g.NbCHeQ0QhJrgPD7tTArvPweMv7RMCBkv-zimpDTVW1wg.JPEG.omjsm/%ED%91%B8%EB%93%9C%ED%8A%B8%EB%9F%AD_%EB%B8%94%EB%9E%99%EB%B3%B4%EB%93%9C%ED%8C%90_%EB%A9%94%EB%89%B4%ED%8C%90%EC%A0%9C%EC%9E%91_%EC%98%A4%EB%AF%B8%EC%95%84%ED%8A%B8_%289%29.JPG?type=w800"
     }
   },
   {
@@ -126,7 +126,7 @@
       "name": "나드리",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://mblogthumb-phinf.pstatic.net/MjAyMTAyMDhfMTQ1/MDAxNjEyNzQ5MTEyNTc1.iBtQAER9U0TWgxqPhLyDKSLHzl8iRZHbdsBiCZHI9bUg.cW36-Vehjo5dp9zwIoOI9dqaDPa084k1C9f0dPVFSx4g.JPEG.hw2052/20210206%EF%BC%BF161039.jpg?type=w800"
     }
   },
   {
@@ -136,7 +136,7 @@
       "name": "마브러스",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://i.ibb.co/1rB5FQX/loading2.png"
     }
   },
   {
@@ -146,7 +146,7 @@
       "name": "현민푸드",
       "time": "업데이트 예정",
       "location": "대운동장 방향",
-      "image": "static/image/food/testimg.png"
+      "src": "https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/301119539_415783337317417_7466861968833012546_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mH62S6r9HmgAX-1jtxH&_nc_ht=scontent-gmp1-1.xx&oh=00_AT94ldzRGb-D_eeIUBXMSZF6x_rqEZI94TQMOQp9Sj2SPg&oe=63471BBE"
     }
   }
 ]

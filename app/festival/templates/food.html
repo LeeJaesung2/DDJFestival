@@ -27,7 +27,7 @@
       </div>
       <img
         class="location-map-image"
-        src="{% static 'image/지도.png' %}"
+        src="{% static 'image/food_loc.jpeg' %}"
         alt=""
       />
     </section>
@@ -55,19 +55,13 @@
 
         <!-- 클릭 했을 때 나오는 상세 부분-->
         <div class="truck-box-detail">
-          <img class="food-truck-image" src="/{{food.image}}" />
+          <img class="food-truck-image" src="{{food.src}}" />
           <div class="food-truck-menus-container">
             <h3>대표메뉴</h3>
             {% for menu in menus %} {% if food.name == menu.name.name %}
             <div>
-              <img
-                src="/{{menu.emoticon}}"
-                width="16"
-                height="16"
-                style="display: inline-block; vertical-align: top"
-              />
               <div class="food-truck-menu" style="display: inline-block">
-                {{menu.food_name}} {{menu.price}}
+                {{menu.food_name}} {{menu.price}}원
               </div>
             </div>
             {% endif %} {% endfor %}

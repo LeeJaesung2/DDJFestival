@@ -1,145 +1,110 @@
 [
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 1,
-            "name":"한국인터넷",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":1
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 2,
-            "name":"아이티고수",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"학생회관 우측 방면",
-            "day":1
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 3,
-            "name":"식품공작소",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":3
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 4,
-            "name":"소비자 협동조합",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":3
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 5,
-            "name":"의류학과 플리마켓",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":3
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 6,
-            "name":"타로/퍼스널",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":1
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 7,
-            "name":"간식배부",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":1
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 8,
-            "name":"동아리 부스",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":1
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 9,
-            "name":"갤럭시 체험 & 포토존",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":3
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 10,
-            "name":"ROTC",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":2
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 11,
-            "name":"미니올림픽",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":2
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 12,
-            "name":"동아리버스킹",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":3
-        }
-    },
-    {
-        "model": "festival.booth",
-        "fields":{
-            "id": 12,
-            "name":"학생과",
-            "sub_title":"웹 개발 및 창업 동아리",
-            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향",
-            "day":3
-        }
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 1,
+      "name": "여성물품나눔행사",
+      "time": "2022.10.21(금) / 13:00 ~ ",
+      "intro": "여성물품 받아가세요!",
+      "location": "중앙잔디과장",
+      "day": 3,
+      "src": "/static/image/여성물품.jpeg"
     }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 2,
+      "name": "❤️중간고사 간식 이벤트❤️",
+      "time": "2022.10.29 ~ 10월 21일 / 11:00 ~ 14:00",
+      "intro": "총학생회 집행부가 만든 붕어빵, 달고나, 팝콘 받아가세요!",
+      "location": "중앙잔디과장",
+      "day": 3,
+      "src": "/static/image/간식.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 3,
+      "name": "❤️중간고사 간식 이벤트❤️",
+      "time": "2022.10.29 ~ 10월 21일 / 11:00 ~ 14:00",
+      "intro": "총학생회 집행부가 만든 붕어빵, 달고나, 팝콘 받아가세요!",
+      "location": "중앙잔디과장",
+      "day": 2,
+      "src": "/static/image/간식.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 4,
+      "name": "하모요, 하나에서 모아서 드려요!",
+      "time": "2022.10.21(금) / 13:00 ~",
+      "intro": "하나 총학생회가 경상국립대학교 학우들에게 텀블러를 드립니다.",
+      "location": "중앙잔디광장",
+      "day": 3,
+      "src": "/static/image/하모요.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 5,
+      "name": "토크 콘서트",
+      "time": "2022.10.20(목) / 14:00",
+      "intro": "개그맨 허경환과 함께하는 토크 콘서트",
+      "location": "국제어학원 오디토리움",
+      "day": 2,
+      "src": "/static/image/booth2.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 6,
+      "name": "하나 오락실",
+      "time": "2022.10.20(목) / 11:00 ~ 16:00",
+      "intro": "1등 3만원 / 2등 2만원 / 3등 1만원 / 로또 30만원 의 기회가 여러분을의 손에!",
+      "location": "중앙잔디광장",
+      "day": 2,
+      "src": "/static/image/booth1.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 7,
+      "name": "하나 대동제 E-sports 대회",
+      "time": "2022.10.29(수) ~ 2022.10.29(목) / 09:00 ~ 17:00",
+      "intro": "경상국립대학교 개척인이 함께하는 리그 오브 레전드 대항전",
+      "location": "학생회관 라운지",
+      "day": 1,
+      "src": "/static/image/booth3.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 8,
+      "name": "응답하라 개척스타",
+      "time": "10월 20일(목) 18:30 ~ ",
+      "intro": "참가자의 추억과 함께하는 노래/댄스",
+      "location": "대운동장",
+      "day": 2,
+      "src": "/static/image/개척스타.jpeg"
+    }
+  },
+  {
+    "model": "festival.booth",
+    "fields": {
+      "id": 9,
+      "name": "동아리 공연",
+      "time": "10월 21일(금) 16:30 ~ ",
+      "intro": "경상국립대학교 동아리 공연을 즐겨보세요!",
+      "location": "대운동장",
+      "day": 3,
+      "src": "/static/image/동아리공연.jpeg"
+    }
+  }
 ]
