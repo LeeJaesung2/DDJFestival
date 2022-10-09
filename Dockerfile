@@ -12,7 +12,15 @@ ADD . /srv/docker-server
 WORKDIR /srv/docker-server
 
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt && python manage.py makemigrations && python manage.py migrate
+RUN pip install -r requirements.txt && \
+    python manage.py collectstatic --noinput && \
+    python manage.py makemigrations festival && \
+    python manage.py migrate && \
+    python manage.py migrate --run-syncdb && \
+    python manage.py loaddata ./festival/fixtures/booth-data.json && \
+    python manage.py loaddata ./festival/fixtures/boothevent-data.json && \
+    python manage.py loaddata ./festival/fixtures/food-data.json && \
+    python manage.py loaddata ./festival/fixtures/menu-data.json
 
 
 #EXPOSE 7372
