@@ -14,12 +14,12 @@
   <body>
     <div class="container">
       <div class="title">2022 FESTIVAL</div>
-      <div class="booth">BOOTH</div>
+      <div class="booth">EVENT</div>
     </div>
 
     <div class="see-btn">
-      <button class="total" onclick="location.href='{% url 'booth' %}'">한눈에 보기</button>
-      <button class="part">부스별 보기</button>
+      <button class="total" onclick="location.href='{% url 'booth' %}'">1, 3일차</button>
+      <button class="part">2일차</button>
     </div>
 
     <section class="booth-container">
@@ -40,13 +40,13 @@
         <div class="booth-detail-container">
           <div class="booth-detail-intro-container">
             <hr class="line" />
-            <h3 class="introduce">소개</h3>            
+            <h3 class="introduce">소개</h3>
             <div class="booth-introduce">
               {{booth.intro}}
             </div>
           </div>
 
-          <div class="booth-detail-event-container">            
+          <div class="booth-detail-event-container">
             <div class="event">진행 이벤트</div>
             {% for event in events %}
             <ul class="booth-event">

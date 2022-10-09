@@ -5,7 +5,8 @@ class Booth(models.Model):
     sub_title = models.TextField()
     intro = models.TextField()
     location =  models.CharField(max_length=200)
-    
+    day = models.IntegerField()
+
     def __str__(self):
         return self.name
 
@@ -13,7 +14,7 @@ class BoothEvent(models.Model):
     booth = models.ForeignKey(Booth, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     content = models.TextField()
-    
+
     def __str__(self):
         return self.title
 
@@ -25,7 +26,7 @@ class Food(models.Model):
 
     def __str__(self):
         return self.name
-    
+
 class Menu(models.Model):
     name = models.ForeignKey(Food, on_delete=models.CASCADE)
     food_name = models.CharField(max_length=200)
