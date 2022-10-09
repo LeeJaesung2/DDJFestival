@@ -1,28 +1,19 @@
-# /docker-server/DDJFestival/Dockerfile
-FROM python:3.10.4
+# 파이썬 이미지를 가져온다
+FROM python:3.10
 
-ENV PYTHONUNBUFFERED 1
+# 유지보수한 사람을 명시해준다
+LABEL maintainer="soyuly"
 
-RUN apt-get -y update
-RUN apt-get -y install vim
+COPY ./requirements.txt /tmp/requirements.txt
+COPY ./app /app
 
-RUN mkdir /srv/docker-server
-ADD . /srv/docker-server
+WORKDIR /app
 
-WORKDIR /srv/docker-server
+EXPOSE 8000
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt && \
-    python manage.py collectstatic --noinput && \
-    python manage.py makemigrations festival && \
-    python manage.py migrate && \
-    python manage.py migrate --run-syncdb && \
-    python manage.py loaddata ./festival/fixtures/booth-data.json && \
-    python manage.py loaddata ./festival/fixtures/boothevent-data.json && \
-    python manage.py loaddata ./festival/fixtures/food-data.json && \
-    python manage.py loaddata ./festival/fixtures/menu-data.json
+RUN python -m venv /py && \
+    /py/bin/pip install --upgrade pip && \
+    /py/bin/pip install -r /tmp/requirements.txt && \
+    rm -rf /tmp
 
-
-#EXPOSE 7372
-
-CMD ["uwsgi", "--ini", "./uwsgi.ini"]
+ENV PATH="/py/bin:$PATH"
