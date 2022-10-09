@@ -1,22 +1,152 @@
 [
-    {
-        "model":"festival.food",
-        "fields":{
-            "id" : 1,
-            "name":"마시따 트럭",
-            "time":"10:00 ~ 17:00",
-            "location":"도서관 앞",
-            "image": "static/image/food/testimg.png"
-        }
-    },
-    {
-        "model":"festival.food",
-        "fields":{
-            "id" : 2,
-            "name":"행복한 트럭",
-            "time":"10:00 ~ 17:00",
-            "location":"럭",
-            "image":"static/image/food/testimg.png"
-        }
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 1,
+      "name": "알럽커피",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
     }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 2,
+      "name": "정성초밥",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 3,
+      "name": "천사날개",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 4,
+      "name": "멕시",
+      "time": "1업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 5,
+      "name": "세븐데이즈",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 6,
+      "name": "미소닭",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 7,
+      "name": "피그몬",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 8,
+      "name": "쿠바",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 9,
+      "name": "가을이네",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 10,
+      "name": "소이트럭",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 11,
+      "name": "중독",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 12,
+      "name": "루츠버거",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 13,
+      "name": "나드리",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 14,
+      "name": "마브러스",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  },
+  {
+    "model": "festival.food",
+    "fields": {
+      "id": 15,
+      "name": "현민푸드",
+      "time": "업데이트 예정",
+      "location": "대운동장 방향",
+      "image": "static/image/food/testimg.png"
+    }
+  }
 ]
