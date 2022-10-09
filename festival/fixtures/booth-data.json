@@ -3,20 +3,143 @@
         "model": "festival.booth",
         "fields":{
             "id": 1,
-            "name":"멋쟁이 사자처럼",
+            "name":"한국인터넷",
             "sub_title":"웹 개발 및 창업 동아리",
             "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향"
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":1
         }
     },
     {
         "model": "festival.booth",
         "fields":{
             "id": 2,
-            "name":"보라소라",
+            "name":"아이티고수",
             "sub_title":"웹 개발 및 창업 동아리",
             "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
-            "location":"복지관 바로 옆. 중앙식장 정문방향"
+            "location":"학생회관 우측 방면",
+            "day":1
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 3,
+            "name":"식품공작소",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":3
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 4,
+            "name":"소비자 협동조합",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":3
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 5,
+            "name":"의류학과 플리마켓",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":3
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 6,
+            "name":"타로/퍼스널",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":1
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 7,
+            "name":"간식배부",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":1
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 8,
+            "name":"동아리 부스",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":1
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 9,
+            "name":"갤럭시 체험 & 포토존",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":3
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 10,
+            "name":"ROTC",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":2
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 11,
+            "name":"미니올림픽",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":2
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 12,
+            "name":"동아리버스킹",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":3
+        }
+    },
+    {
+        "model": "festival.booth",
+        "fields":{
+            "id": 12,
+            "name":"학생과",
+            "sub_title":"웹 개발 및 창업 동아리",
+            "intro":"자신의 아이디어를 실현할 수 있는 웹 개발 및 창업 동아리 멋쟁이 사자처럼 입니다.",
+            "location":"복지관 바로 옆. 중앙식장 정문방향",
+            "day":3
         }
     }
 ]
