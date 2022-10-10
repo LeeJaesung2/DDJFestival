@@ -244,8 +244,7 @@ body {
 }
 
 .booth-item-image {
-  margin: 20px 0 20px 0;
-  width: 100%;
-  height: 10.438rem;
-  border-radius: 15px;
+  margin: 20px -1.5rem 10px -1.5rem;
+  width: calc(100% + 3rem);
+  height: 25.438rem;
 }
