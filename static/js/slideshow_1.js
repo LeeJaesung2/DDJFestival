@@ -9,11 +9,6 @@ const tabDetail = [
     date: "10.19 WED",
     detail: [
       {
-        time: "주간 상시",
-        data: "갤럭시 체험&포토존, 동아리, 의류학과 플리마켓, 간식 이벤트, 푸드트럭, 디스코 팡팡, 바이킹 놀이기구",
-        detail: "",
-      },
-      {
         time: "9:00",
         data: "E-sports 대회",
         detail: "(학생회관 라운지)",
@@ -42,13 +37,8 @@ const tabDetail = [
   },
   {
     id: 1,
-    date: "10.20 THUR",
+    date: "10.20 THU",
     detail: [
-      {
-      time: "주간 상시",
-      data: "갤럭시 체험&포토존, 동아리, 의류학과 플리마켓, 간식 이벤트, 푸드트럭, 디스코 팡팡, 바이킹 놀이기구",
-      detail: "",
-      },
       {
       time: "9:00",
       data: "E-sports 대회",
@@ -90,11 +80,6 @@ const tabDetail = [
     id: 2,
     date: "10.21 FRI",
     detail: [
-      {
-        time: "주간 상시",
-        data: "갤럭시 체험&포토존, 동아리, 의류학과 플리마켓, 간식 이벤트, 푸드트럭, 디스코 팡팡, 바이킹 놀이기구",
-        detail: "",
-      },
       {
         time: "13:00",
         data: "퍼스널컬러 부스",
