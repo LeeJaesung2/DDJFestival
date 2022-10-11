@@ -141,9 +141,11 @@
     <div class="swiper mySwiper3" style="height: 270px">
       <div class="swiper-wrapper">
         {% for food in foods %}
+        {% if food.src != "https://i.ibb.co/1rB5FQX/loading2.png" %}
         <div class="swiper-slide">
           <img class="booth1" src="{{food.src}}" style="height: 170px" />
         </div>
+        {% endif %}
         {% endfor %}
       </div>
       <div class="swiper-pagination"></div>
