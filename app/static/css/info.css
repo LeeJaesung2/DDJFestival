@@ -154,3 +154,7 @@ li{
     line-height: 43px;
     color: #ffffff;
   }
+  span{
+    display: inline-block;
+    margin-top: 10px;
+  }
