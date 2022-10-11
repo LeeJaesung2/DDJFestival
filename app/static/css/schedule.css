@@ -9,6 +9,7 @@ i {
   color: gray;
   /*margin: 30px 345px 27px 0;*/
 }
+
 .upper_wrap {
   display: flex;
   display: flex;
@@ -67,6 +68,7 @@ i {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 30px;
   margin-bottom: 24px;
 }
 
@@ -156,19 +158,26 @@ tr {
   align-items: center;
 }
 
-/*.slideitem {
-  width: 327px;
-  height: 190px;
-} */
 
 .slidebox {
-  width: 90vw;
+  /* display: flex; */
+  flex-wrap: nowrap;
   overflow: hidden;
-  margin: 0 auto;
+}
+
+.slideitem {
+
+  margin: 40px 0;
+
+  display: block;
+  flex-basis: 90vw;
+  position: relative;
+
+  -webkit-user-drag: none;
 }
 
 .slidelist {
-  display: flex;
+  /* display: flex; */
   /* flex-wrap: nowrap; */
   white-space: nowrap;
   /*overflow-x: scroll;*/
@@ -209,21 +218,21 @@ tr {
 .program_info {
   width: 320px;
   height: 167px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
 
 .program_info_box {
-  margin-top: 28px;
-  display: flex;
-  flex-direction: column;
+  /* margin-top: 28px; */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
 }
 
 .program_title {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin-bottom: 14px;
 
   font-family: "Pretendard";
