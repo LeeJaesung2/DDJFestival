@@ -274,8 +274,12 @@ li {
     line-height: 43px;
     color: #ffffff;
   }
-  span{
+  .bus{
     display: inline-block;
     margin-top: 10px;
   }
 
+  .bustime{
+    display: inline-block;
+    margin-top: 10px;
+  }
