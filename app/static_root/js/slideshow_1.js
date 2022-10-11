@@ -40,9 +40,9 @@ const tabDetail = [
     date: "10.20 THU",
     detail: [
       {
-        time: "9:00",
-        data: "E-sports 대회",
-        detail: "(학생회관 라운지)",
+      time: "9:00",
+      data: "E-sports 대회",
+      detail: "(학생회관 라운지)",
       },
       {
         time: "11:00",
@@ -106,7 +106,7 @@ const tabDetail = [
         detail: "(대운동장)",
       },
       {
-        time: "21:300",
+        time: "21:30",
         data: "초대가수 공연",
         detail: "(대운동장)",
       },
