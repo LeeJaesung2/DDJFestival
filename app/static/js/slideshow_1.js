@@ -106,7 +106,7 @@ const tabDetail = [
         detail: "(대운동장)",
       },
       {
-        time: "21:300",
+        time: "21:30",
         data: "초대가수 공연",
         detail: "(대운동장)",
       },
