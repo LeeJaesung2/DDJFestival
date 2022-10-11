@@ -102,11 +102,11 @@ body {
 
 .icon-up {
   transform: rotate(180deg);
-  transition: transform 0.5s linear;
+  transition: transform 0.2s linear;
 }
 
 .icon-down {
-  transition: transform 0.5s linear;
+  transition: transform 0.2s linear;
 }
 
 .food-truck-name {
