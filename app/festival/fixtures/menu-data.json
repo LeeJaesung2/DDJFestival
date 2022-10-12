@@ -107,7 +107,7 @@
     "model": "festival.menu",
     "fields": {
       "name": 9,
-      "food_name": "소떡",
+      "food_name": "소떡소떡",
       "price": 1100
     }
   },
@@ -156,14 +156,6 @@
     "fields": {
       "name": 14,
       "food_name": "팟타이",
-      "price": 1100
-    }
-  },
-  {
-    "model": "festival.menu",
-    "fields": {
-      "name": 15,
-      "food_name": "츄러스",
       "price": 1100
     }
   },
