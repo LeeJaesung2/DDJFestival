@@ -183,7 +183,6 @@ var slide_images_idx = 0;
 
 // 슬라이드 될 이미지들
 var slide_images = document.getElementsByClassName("slideitem");
-console.log(slide_images);
 
 // 윈도우 넓이
 let windowWidth = window.innerWidth;
@@ -197,7 +196,7 @@ function slide_left_img() {
   windowWidth = window.innerWidth;
   imageWidth = windowWidth * 0.9;
 
-  if (slide_images_idx < slide_images.length) {
+  if (slide_images_idx < slide_images.length - 1) {
     console.log(slide_images);
     slide_images[slide_images_idx].animate(
       [
@@ -237,8 +236,7 @@ function slide_left_img() {
 
     slide_images_idx += 1;
     changeButtonColor();
-    changePrgramInfo();
-    console.log(slide_images_idx);
+    // changePrgramInfo();
   }
 }
 
@@ -288,37 +286,35 @@ function slide_right_img() {
 
   slide_images_idx -= 1;
   changeButtonColor();
-  changePrgramInfo();
-  console.log(slide_images_idx);
+  // changePrgramInfo();
+  console.log("slide_images_idx"+slide_images_idx);
 }
 
 let slide_circles = document.getElementsByClassName("slide-circle");
 slide_circles[slide_images_idx].style.backgroundColor = "white"; // 동그라미 초기화
-console.log(slide_images.length);
 function changeButtonColor() {
   for (i = 0; i <= slide_images.length - 1; i++) {
     if (i == slide_images_idx) {
       slide_circles[i].style.backgroundColor = "white";
     } else {
-      console.log(`check idx ${i}`);
       slide_circles[i].style.backgroundColor = "gray";
     }
   }
 }
 
 // 프로그램 설명 애니메이션
-let program_texts = document.getElementsByClassName("program_text");
-changePrgramInfo(); // 윈도우 로드 최초 실행
-function changePrgramInfo() {
-  for (i = 0; i <= program_texts.length - 1; i++) {
-    if (i == slide_images_idx) {
-      program_texts[i].style.display = "block";
-    } else {
-      console.log(`check idx ${i}`);
-      program_texts[i].style.display = "none";
-    }
-  }
-}
+// let program_texts = document.getElementsByClassName("program_text");
+// changePrgramInfo(); // 윈도우 로드 최초 실행
+// function changePrgramInfo() {
+//   for (i = 0; i <= program_texts.length - 1; i++) {
+//     if (i == slide_images_idx) {
+//       program_texts[i].style.display = "block";
+//     } else {
+//       console.log(`check idx ${i}`);
+//       program_texts[i].style.display = "none";
+//     }
+//   }
+// }
 
 // ############## Drag Event ########## //
 
@@ -327,12 +323,12 @@ let endPoint = 0;
 
 // PC 클릭 이벤트 (드래그)
 slide_box.addEventListener("mousedown", (e) => {
-  console.log("mousedown", e.pageX);
+  // console.log("mousedown", e.pageX);
   startPoint = e.pageX; // 마우스 드래그 시작 위치 저장
 });
 
 slide_box.addEventListener("mouseup", (e) => {
-  console.log("mouseup", e.pageX);
+  // console.log("mouseup", e.pageX);
   endPoint = e.pageX; // 마우스 드래그 끝 위치 저장
   if (startPoint < endPoint) {
     // 마우스가 오른쪽으로 드래그 된 경우
@@ -347,11 +343,11 @@ slide_box.addEventListener("mouseup", (e) => {
 
 // 모바일 터치 이벤트 (스와이프)
 slide_box.addEventListener("touchstart", (e) => {
-  console.log("touchstart", e.touches[0].pageX);
+  // console.log("touchstart", e.touches[0].pageX);
   startPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
 });
 slide_box.addEventListener("touchend", (e) => {
-  console.log("touchend", e.changedTouches[0].pageX);
+  // console.log("touchend", e.changedTouches[0].pageX);
   endPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
   if (startPoint < endPoint) {
     // 오른쪽으로 스와이프 된 경우

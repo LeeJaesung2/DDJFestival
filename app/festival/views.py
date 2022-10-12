@@ -6,7 +6,7 @@ from django.db.models import Q
 def home(request):
     foods = Food.objects.all()
     booths = Booth.objects.all()
-    return render(request, 'comming.html', {'foods' : foods, 'booths' : booths})
+    return render(request, 'main.html', {'foods' : foods, 'booths' : booths})
 
 def booth(request):
     booths = Booth.objects.filter(Q(day=1)|Q(day=3))
