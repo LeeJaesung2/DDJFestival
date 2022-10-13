@@ -55,8 +55,8 @@ h1 {
 .topicon {
   font-family: "Pretendard";
   position: fixed;
-  top: 700px;
-  right: 7px;
+  top: 750px;
+  right: 20px;
   display: flex;
   text-align: center;
   width: 40px;
@@ -67,6 +67,7 @@ h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .topicon a {
@@ -215,7 +216,7 @@ h1 {
   margin-top: 50px;
   width: 100%;
   border-radius: 10px;
-  height: 300px;
+  height: 100px;
 }
 
 /* FOOD */
@@ -252,16 +253,29 @@ h1 {
   background: transparent;
 }
 
-.swiper-slide img {
-  width: 95%;
+.festival-booth1 {
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fesitval-image-1 {
+  width: 100%;
   height: auto;
+}
+
+.food-image-1 {
+  margin-top: 40px;
+  width: 95%;
+  height: 210px;
+  border-radius: 10px;
 }
 
 /*pagination*/
 #daypage {
   padding-top: 25px;
   position: relative;
-  top: 10px;
+  top: 0px;
   display: flex;
   justify-content: center;
 }
