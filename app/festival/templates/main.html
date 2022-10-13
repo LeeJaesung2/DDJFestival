@@ -56,7 +56,6 @@
           />
         </div>
 
-
         <div class="swiper-slide">
           <img
             class="lineup1"
@@ -64,7 +63,7 @@
             alt="하동균"
           />
         </div>
-                <div class="swiper-slide">
+        <div class="swiper-slide">
           <img
             class="lineup1"
             src="/static/image/main/lineup2.png"
@@ -87,42 +86,22 @@
     <p class="ftv">2022 FESTIVAL</p>
     <div class="booth">Event</div>
     <p class="intro">개척대동제의 축제 부스들을 구경해보세요</p>
-    <div class="swiper mySwiper2" style="height: 300px">
+    <div class="festival-swiper mySwiper2">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img
-            class="booth1"
-            src="{% static 'image/booth1.jpeg' %}"
-            style="height: 200px"
-          />
+          <img class="festival-booth1 fesitval-image-1" src="{% static 'image/booth1.jpeg' %}" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="booth1"
-            src="{% static 'image/booth2.jpeg' %}"
-            style="height: 200px"
-          />
+          <img class="festival-booth1 fesitval-image-1" src="{% static 'image/booth2.jpeg' %}" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="booth1"
-            src="{% static 'image/booth3.jpeg' %}"
-            style="height: 200px"
-          />
+          <img class="festival-booth1 fesitval-image-1" src="{% static 'image/booth3.jpeg' %}" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="booth1"
-            src="{% static 'image/booth4.jpeg' %}"
-            style="height: 200px"
-          />
+          <img class="festival-booth1 fesitval-image-1" src="{% static 'image/booth4.jpeg' %}" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="booth1"
-            src="{% static 'image/booth5.jpeg' %}"
-            style="height: 200px"
-          />
+          <img class="festival-booth1 fesitval-image-1" src="{% static 'image/booth5.jpeg' %}" />
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -139,15 +118,13 @@
     <p class="ftv">2022 FESTIVAL</p>
     <div class="booth">FOOD</div>
     <p class="intro">개척대동제의 축제 먹거리들을 구경해보세요</p>
-    <div class="swiper mySwiper3" style="height: 270px">
+    <div class="swiper mySwiper3" style="height: 290px">
       <div class="swiper-wrapper">
-        {% for food in foods %}
-        {% if food.src != "https://i.ibb.co/1rB5FQX/loading2.png" %}
+        {% for food in foods %} {% if food.src != "https://i.ibb.co/1rB5FQX/loading2.png" %}
         <div class="swiper-slide">
-          <img class="booth1" src="{{food.src}}" style="height: 170px" />
+          <img class="food-image-1" src="{{food.src}}" />
         </div>
-        {% endif %}
-        {% endfor %}
+        {% endif %} {% endfor %}
       </div>
       <div class="swiper-pagination"></div>
     </div>
