@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+}
+
+a {
+  text-decoration: none;
+  color: #7e7386;
+}
+
+input[id="menuicon"] {
+  display: none;
+}
+
+input[id="menuicon"] + label {
+  display: block;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+}
+input[id="menuicon"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.35s;
+  z-index: 100000;
+}
+input[id="menuicon"] + label span:nth-child(1) {
+  top: 0;
+}
+
+input[id="menuicon"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id="menuicon"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: all 0.35s;
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9000;
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  -moz-backdrop-filter: blur(13px);
+  -ms-backdrop-filter: blur(13px);
+  z-index: 8000;
+}
+
+input[id="menuicon"]:checked + label + div {
+  right: 0;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  font-family: "Pretendard";
+  font-weight: bold;
+  font-size: 38px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  z-index: 10000;
+}
+
+.menu li {
+  list-style: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  z-index: 10001;
+}

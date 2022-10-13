@@ -41,8 +41,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS=['*']
-
+CSRF_TRUSTED_ORIGINS = ['http://203.255.3.66:8000', 'http://203.255.3.66:5372','http://www.2022gnufestival.kro.kr:5372','http://203.255.3.66', 'http://localhost:8000']
 # Application definition
 
 INSTALLED_APPS = [

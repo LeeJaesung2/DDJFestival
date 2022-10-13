@@ -30,7 +30,7 @@ const tabDetail = [
       },
       {
         time: "21:30",
-        data: "붗꽃놀이 및 초대가수 공연A",
+        data: "붗꽃놀이 및 초대가수(현아&던) 공연",
         detail: "(대운동장)",
       },
     ],
@@ -71,7 +71,7 @@ const tabDetail = [
       },
       {
         time: "21:30",
-        data: "초청가수 공연",
+        data: "초청가수(하동균) 공연",
         detail: "(대운동장)",
       },
     ],
@@ -107,7 +107,7 @@ const tabDetail = [
       },
       {
         time: "21:30",
-        data: "초대가수 공연",
+        data: "초대가수(김필) 공연",
         detail: "(대운동장)",
       },
     ],
