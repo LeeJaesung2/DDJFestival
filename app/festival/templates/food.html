@@ -46,7 +46,6 @@
         <div class="food-truck-before">
           <div class="food-truck-name-time-container" id="{{food.id}}">
             <span class="food-truck-name">{{food.name}}</span>
-            <span class="food-truck-time">운영 시간 {{food.time}}</span>
             <span class="food-truck-time">장소 {{food.location}}</span>
           </div>
 
@@ -61,7 +60,7 @@
             {% for menu in menus %} {% if food.name == menu.name.name %}
             <div>
               <div class="food-truck-menu" style="display: inline-block">
-                ✅ {{menu.food_name}}
+                ✅ {{menu.food_name}} {% if menu.price != '-' %}{{menu.price}}원{% endif %}
               </div>
             </div>
             {% endif %} {% endfor %}

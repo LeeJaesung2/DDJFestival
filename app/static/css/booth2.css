@@ -238,7 +238,7 @@ body {
 
 .location-map-image {
   width: 98%;
-  height: 15rem;
+  height: auto;
   border-radius: 15px;
   margin-bottom: 30px;
 }
